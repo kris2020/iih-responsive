@@ -1,3 +1,6 @@
+/* @override 
+	http://new.intellectualhistory.net/wordpress/wp-content/themes/iih/iih.css */
+
 /*
 This stylesheet provides custom styles and is to be used in addition to style.css. It will eventually be merged.
 */
@@ -269,6 +272,18 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 
 
 /*--------------------------------------------------------------
+# Content - links
+--------------------------------------------------------------*/
+
+a:link, a:visited {
+   	color: hsl(207, 100%, 30%);
+}
+
+a:hover, a:active {
+	color: hsl(2, 70%, 44%);
+}
+
+/*--------------------------------------------------------------
 # Widgets - layout
 --------------------------------------------------------------*/
 
@@ -308,7 +323,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
     color: inherit;
 }
 
-.widget ul, .widget ol {
+.widget {
     font-size: 0.9rem;
 }
 
@@ -321,11 +336,36 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 # Widgets - Tribe events
 --------------------------------------------------------------*/
 
+.tribe-events-list-widget {
+    padding: 0;
+}
+
 .tribe-list-widget {
+    padding-left: 1rem;
+}
+
+.tribe-list-widget li {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
+.tribe-event-title, .tribe-event-duration {
+    margin: 0;
+    float: left;
+}
+
+.tribe-event-title {
+    font-weight: normal;
+    padding-right: 0.5rem;
+}
+
+.tribe-events-widget-link {
+    padding: 1rem;
+    margin: 0;
+    text-align: right;
+    font-size: 0.8rem;
+}
 
 /*--------------------------------------------------------------
 # Footer - layout
