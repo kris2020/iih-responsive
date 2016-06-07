@@ -1,0 +1,380 @@
+/* @override 
+	http://new.intellectualhistory.net/wordpress/wp-content/themes/iih/iih.css */
+
+/*
+This stylesheet provides custom styles and is to be used in addition to style.css
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography
+# Headings - styling
+# Headings - layout
+# Menu - styling
+# Menu - layout
+# Banner
+# Content - styling
+# Content - layout
+# Widgets
+# Footer - layout
+# Footer - styling
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Gentium+Book+Basic:400,400bold,400italic);
+
+.site-branding, .main-navigation, .entry-title, .entry-content, .secondary-navigation, .site-info, .widget {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.site-branding em, .entry-content p:first-child {
+   	font-family: 'Gentium Book Basic', Garamond, serif;
+}
+
+/*--------------------------------------------------------------
+# Headings - styling
+--------------------------------------------------------------*/
+
+.site-branding {
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: hsl(342, 77%, 30%);  
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 1px;
+}
+
+.site-branding em {
+    text-transform: none;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.site-title {
+    font-size: 2rem;
+}
+
+.site-title a:link, .site-title a:visited, .site-title a:active, .site-title a:hover {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);    
+}
+
+.site-description {
+    font-size: 1.1rem;
+}
+
+.entry-title, .page-title {
+    font-size: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 0%);        
+}
+
+/*--------------------------------------------------------------
+# Headings - layout
+--------------------------------------------------------------*/
+
+.site-branding {
+    padding: 1.5%;
+}
+
+.site-branding em {
+    padding-right: 0.5%;
+}
+
+.site-title, .site-description {
+    padding-left: 1rem;
+    margin: 0;
+}
+
+.entry-title {
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Menu - styling
+--------------------------------------------------------------*/
+
+.main-navigation {
+    background-color: hsl(0, 100%, 0%);
+    font-size: 1rem;
+    text-transform: uppercase;    
+}
+
+.main-navigation a:link, .main-navigation a:visited  {
+    color: hsl(0, 0%, 100%);
+    display: block;
+    text-decoration: none;
+}
+
+.main-navigation a:hover {
+    background-color: hsl(342, 77%, 30%);
+    display: block;
+    text-decoration: none;    
+}
+
+/*--------------------------------------------------------------
+# Menu - layout
+--------------------------------------------------------------*/
+
+.site-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.site-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 1.5em;
+	left: -999em;
+	z-index: 99999;
+}
+
+.site-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.site-navigation ul ul a {
+	width: 200px;
+}
+
+.site-navigation ul ul li {
+
+}
+
+.site-navigation li:hover > a,
+.site-navigation li.focus > a {
+}
+
+.site-navigation ul ul :hover > a,
+.site-navigation ul ul .focus > a {
+}
+
+.site-navigation ul ul a:hover,
+.site-navigation ul ul a.focus {
+}
+
+.site-navigation ul li:hover > ul,
+.site-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.site-navigation ul ul li:hover > ul,
+.site-navigation ul ul li.focus > ul {
+	left: 100%;
+}
+
+.site-navigation .current_page_item > a,
+.site-navigation .current-menu-item > a,
+.site-navigation .current_page_ancestor > a,
+.site-navigation .current-menu-ancestor > a {
+}
+
+/* Small menu. */
+.menu-toggle,
+.site-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.site-navigation ul {
+		display: block;
+	}
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.main-navigation .menu-item {
+    float: left;
+    padding: 1.15%;
+}
+
+/*--------------------------------------------------------------
+# Banner
+--------------------------------------------------------------*/
+
+.wp-post-image {
+    width: 100%;
+    height: auto;
+}
+
+/*--------------------------------------------------------------
+# Content - styling
+--------------------------------------------------------------*/
+
+.entry-content p {
+    color: hsl(0, 0%, 0%);
+}
+.entry-content p:first-child {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+/*--------------------------------------------------------------
+# Content - layout
+--------------------------------------------------------------*/
+
+.entry-content {
+    margin-top: 0em;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.entry-content p {
+    margin-top: 0;
+}
+
+/*--------------------------------------------------------------
+# Widgets - layout
+--------------------------------------------------------------*/
+
+.widget-area {
+    background-color: hsl(0, 60%, 52%);
+}
+
+.widget {
+    float: left;
+    width: 33%;
+    padding: 0 1rem 1rem;
+}
+
+.widget { /* temp border */
+    border: 1px solid #000;
+}
+
+.widget ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+/*--------------------------------------------------------------
+# Widgets - styling
+--------------------------------------------------------------*/
+
+.widget-title {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.widget-title a:link, .widget-title a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.widget ul, .widget ol {
+    font-size: 0.9rem;
+}
+
+.rss-widget-icon {
+    display: none;
+}
+
+/*--------------------------------------------------------------
+# Widgets - Tribe events
+--------------------------------------------------------------*/
+
+.tribe-list-widget {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Footer - layout
+--------------------------------------------------------------*/
+
+.secondary-navigation, .site-info {
+    float: left;
+    width: 50%;
+    padding: 1rem 3rem;
+}
+
+.footer-logo {
+    clear: both;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*--------------------------------------------------------------
+# Footer - styling
+--------------------------------------------------------------*/
+
+.site-footer {
+    background-color: hsl(239, 7%, 12%);
+    color: hsl(0, 0%, 100%);
+    font-size: 0.9rem;
+}
+
+.secondary-navigation a:link, .site-info a:link, .secondary-navigation a:visited, .site-info a:visited {
+   	color: hsl(195, 100%, 46%);
+   	text-decoration: none;
+}
+
+.secondary-navigation a:active, .site-info a:active, .secondary-navigation a:hover, .site-info a:hover {
+   	color: hsla(195, 100%, 46%, 0.64);
+   	text-decoration: none;
+}
+
+.secondary-navigation {
+    text-align: center;
+}
+
+.footer-heading {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#twitter-logo {
+    background-color: hsl(239, 7%, 12%);
+}
+
+#university-logo {
+    background-color: hsl(0, 0%, 0%);
+}
+
+#university-logo img {
+   	width: 350px;
+}
