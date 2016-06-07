@@ -29,8 +29,9 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 }
 
 .site-branding em, .entry-content p:first-child {
-   	font-family: 'Gentium Book Basic', Garamond, serif;
+    font-family: 'Gentium Book Basic', Garamond, serif;
 }
+
 
 /*--------------------------------------------------------------
 # Headings - styling
@@ -70,6 +71,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
     color: hsl(0, 0%, 0%);        
 }
 
+
 /*--------------------------------------------------------------
 # Headings - layout
 --------------------------------------------------------------*/
@@ -90,6 +92,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 .entry-title {
     margin-bottom: 0;
 }
+
 
 /*--------------------------------------------------------------
 # Menu - styling
@@ -113,33 +116,34 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
     text-decoration: none;    
 }
 
+
 /*--------------------------------------------------------------
 # Menu - layout
 --------------------------------------------------------------*/
 
 .site-navigation ul {
-	display: none;
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 .site-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 1.5em;
-	left: -999em;
-	z-index: 99999;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    float: left;
+    position: absolute;
+    top: 1.5em;
+    left: -999em;
+    z-index: 99999;
 }
 
 .site-navigation ul ul ul {
-	left: -999em;
-	top: 0;
+    left: -999em;
+    top: 0;
 }
 
 .site-navigation ul ul a {
-	width: 200px;
+    width: 200px;
 }
 
 .site-navigation ul ul li {
@@ -160,12 +164,12 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 
 .site-navigation ul li:hover > ul,
 .site-navigation ul li.focus > ul {
-	left: auto;
+    left: auto;
 }
 
 .site-navigation ul ul li:hover > ul,
 .site-navigation ul ul li.focus > ul {
-	left: 100%;
+    left: 100%;
 }
 
 .site-navigation .current_page_item > a,
@@ -177,51 +181,52 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 /* Small menu. */
 .menu-toggle,
 .site-navigation.toggled ul {
-	display: block;
+    display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.site-navigation ul {
-		display: block;
-	}
+    .menu-toggle {
+        display: none;
+    }
+    .site-navigation ul {
+        display: block;
+    }
 }
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
-	margin: 0 0 1.5em;
-	overflow: hidden;
+    margin: 0 0 1.5em;
+    overflow: hidden;
 }
 
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-	float: left;
-	width: 50%;
+    float: left;
+    width: 50%;
 }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
+    float: right;
+    text-align: right;
+    width: 50%;
 }
 
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
 }
 
 .main-navigation .menu-item {
     float: left;
     padding: 1.15%;
 }
+
 
 /*--------------------------------------------------------------
 # Banner
@@ -231,6 +236,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
     width: 100%;
     height: auto;
 }
+
 
 /*--------------------------------------------------------------
 # Content - styling
@@ -246,6 +252,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
     font-style: italic;
 }
 
+
 /*--------------------------------------------------------------
 # Content - layout
 --------------------------------------------------------------*/
@@ -259,6 +266,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 .entry-content p {
     margin-top: 0;
 }
+
 
 /*--------------------------------------------------------------
 # Widgets - layout
@@ -284,6 +292,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
     padding-left: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Widgets - styling
 --------------------------------------------------------------*/
@@ -306,6 +315,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 .rss-widget-icon {
     display: none;
 }
+
 
 /*--------------------------------------------------------------
 # Widgets - Tribe events
@@ -333,6 +343,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
     padding: 1rem;
 }
 
+
 /*--------------------------------------------------------------
 # Footer - styling
 --------------------------------------------------------------*/
@@ -344,13 +355,13 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 }
 
 .secondary-navigation a:link, .site-info a:link, .secondary-navigation a:visited, .site-info a:visited {
-   	color: hsl(195, 100%, 46%);
-   	text-decoration: none;
+       color: hsl(195, 100%, 46%);
+       text-decoration: none;
 }
 
 .secondary-navigation a:active, .site-info a:active, .secondary-navigation a:hover, .site-info a:hover {
-   	color: hsla(195, 100%, 46%, 0.64);
-   	text-decoration: none;
+       color: hsla(195, 100%, 46%, 0.64);
+       text-decoration: none;
 }
 
 .secondary-navigation {
@@ -373,5 +384,5 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 }
 
 #university-logo img {
-   	width: 350px;
+       width: 350px;
 }
