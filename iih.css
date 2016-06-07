@@ -14,6 +14,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 # Content - styling
 # Content - layout
 # Widgets
+# The Events Calendar
 # Footer - layout
 # Footer - styling
 --------------------------------------------------------------*/
@@ -325,6 +326,11 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
     margin: 0;
     padding: 0;
 }
+
+
+/*--------------------------------------------------------------
+# The Events Calendar
+--------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
