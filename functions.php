@@ -45,6 +45,7 @@ function iih_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'iih' ),
+		'secondary' => esc_html__( 'Secondary', 'iih' ),
 	) );
 
 	/*
@@ -101,7 +102,7 @@ function iih_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'iih' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'iih' ),
+		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -127,9 +128,11 @@ function iih_scripts() {
 add_action( 'wp_enqueue_scripts', 'iih_scripts' );
 
 /**
- * Implement the Custom Header feature.
+ * Implement the Custom Header and the Post Thumbnails (a.k.a. Featured Image) feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
+add_theme_support( 'custom-header' );
+add_theme_support( 'post-thumbnails' );
 
 /**
  * Custom template tags for this theme.
