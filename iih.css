@@ -57,8 +57,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 .site-title {
     font-size: 2rem;
     letter-spacing: 0.1rem;    
-    -webkit-text-stroke-width: 0.05rem;
-  
+    /* -webkit-text-stroke-width: 0.05rem; */
 }
 
 .site-title a:link, .site-title a:visited, .site-title a:active, .site-title a:hover {
@@ -69,7 +68,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 .site-description {
     font-size: 1.1rem;
     letter-spacing: 0.05rem;
-    -webkit-text-stroke-width: 0.025rem;
+    /* -webkit-text-stroke-width: 0.01rem; */
 }
 
 .entry-title, .page-title {
