@@ -1,0 +1,24 @@
+/*
+This stylesheet provides custom styles for The Events Calendar plugin
+*/
+
+/*--------------------------------------------------------------
+# Widget
+--------------------------------------------------------------*/
+
+li.tribe-events-list-widget-events {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.tribe-event-title, .tribe-event-duration {
+    display: inline;
+}
+
+.tribe-events-widget-link {
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    margin: 0;
+    text-align: right;
+    font-size: 0.8rem;
+}

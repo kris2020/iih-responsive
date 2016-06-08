@@ -1,6 +1,3 @@
-/* @override 
-	http://new.intellectualhistory.net/wordpress/wp-content/themes/iih/iih.css */
-
 /*
 This stylesheet provides custom styles and is to be used in addition to style.css. It will eventually be merged.
 */
@@ -304,9 +301,9 @@ a:hover, a:active {
 }
 
 .widget ul {
-    list-style: none;
+    list-style: square;
     margin: 0;
-    padding-left: 0;
+    padding-left: 1rem;
 }
 
 
@@ -332,46 +329,6 @@ a:hover, a:active {
 .rss-widget-icon {
     display: none;
 }
-
-
-/*--------------------------------------------------------------
-# Widgets - Tribe events
---------------------------------------------------------------*/
-
-.tribe-events-list-widget {
-    padding: 0;
-}
-
-.tribe-list-widget {
-    padding-left: 1rem;
-}
-
-.tribe-list-widget li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.tribe-event-title, .tribe-event-duration {
-    margin: 0;
-    float: left;
-}
-
-.tribe-event-title {
-    font-weight: normal;
-    padding-right: 0.5rem;
-}
-
-.tribe-events-widget-link {
-    padding: 1rem;
-    margin: 0;
-    text-align: right;
-    font-size: 0.8rem;
-}
-
-/*--------------------------------------------------------------
-# The Events Calendar
---------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
