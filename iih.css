@@ -43,8 +43,9 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
     font-weight: bold;
     text-transform: uppercase;
     background-color: hsl(342, 77%, 30%);  
-    color: hsl(0, 0%, 100%);
-    letter-spacing: 1px;
+    color: hsl(0, 0%, 0%);
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-color: #000;
 }
 
 .site-branding em {
@@ -55,6 +56,9 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 
 .site-title {
     font-size: 2rem;
+    letter-spacing: 0.1rem;    
+    -webkit-text-stroke-width: 0.05rem;
+  
 }
 
 .site-title a:link, .site-title a:visited, .site-title a:active, .site-title a:hover {
@@ -64,6 +68,8 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 
 .site-description {
     font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    -webkit-text-stroke-width: 0.025rem;
 }
 
 .entry-title, .page-title {
@@ -106,6 +112,10 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
     text-transform: uppercase;    
 }
 
+.main-navigation a {
+    padding: 0.5rem 1rem
+}
+
 .main-navigation a:link, .main-navigation a:visited  {
     color: hsl(0, 0%, 100%);
     display: block;
@@ -115,7 +125,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 .main-navigation a:hover {
     background-color: hsl(342, 77%, 30%);
     display: block;
-    text-decoration: none;    
+    text-decoration: none;  
 }
 
 
@@ -224,9 +234,8 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
     width: 100%;
 }
 
-.main-navigation .menu-item {
+.main-navigation .menu-item {    
     float: left;
-    padding: 1.15%;
 }
 
 
@@ -389,4 +398,4 @@ a:hover, a:active {
 
 #university-logo img {
        width: 350px;
-}
+/*}*/
