@@ -16,7 +16,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
+<script>
+function toggle() {
+    var check = document.getElementById('js-menu-toggle-collapse').style;
+    if (argument = 'collapse') {
+        document.getElementById('js-menu-toggle-collapse').style.display = 'none';
+        document.getElementById('js-menu-toggle-expand').style.display = 'block';        
+    } else if (argument = 'expand') {
+        document.getElementById('js-menu-toggle-collapse').style.display = 'block';
+        document.getElementById('js-menu-toggle-expand').style.display = 'none';        
+    }
+}
+</script>
 <?php wp_head(); ?>
 </head>
 
@@ -31,21 +42,21 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="site-navigation  main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'iih' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" onclick="toggle();"><span class="menu-toggle-expand  js-menu-toggle-expand">&#9662; </span><span class="menu-toggle-collapse  js-menu-toggle-collapse">&#9666; </span><?php esc_html_e( 'Navigation', 'iih' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 	
 	<?php
 	if ( is_front_page() ) { ?>
-    <div id="site-banner">	<!-- #site-banner -->
-	    	<img src="<?php header_image(); ?>" class="wp-post-image" />
-    	</div> <!-- #site-banner -->
+    <div class="site-banner">	<!-- #site-banner -->
+	    <img src="<?php header_image(); ?>" class="wp-post-image" />
+    </div> <!-- #site-banner -->
     <?php
 	} elseif ( has_post_thumbnail() ) { ?>
-	<div id="site-banner">	<!-- #site-banner -->
-		    <img src="<?php	the_post_thumbnail_url(); ?>" class="wp-post-image" />
-		</div> <!-- #site-banner -->		    
+	<div class="site-banner">	<!-- #site-banner -->
+		<img src="<?php	the_post_thumbnail_url(); ?>" class="wp-post-image" />
+	</div> <!-- #site-banner -->		    
 	<?php }
 	?>
 
