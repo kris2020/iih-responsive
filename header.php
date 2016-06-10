@@ -46,18 +46,17 @@ function toggle() {
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-	
+			
+	<div id="site-banner">	<!-- #site-banner -->
 	<?php
-	if ( is_front_page() ) { ?>
-    <div class="site-banner">	<!-- #site-banner -->
+	if ( has_post_thumbnail() ) { ?>
+		<img src="<?php	the_post_thumbnail_url(); ?>" class="wp-post-image" /> 
+	<?php
+	} else { ?>
 	    <img src="<?php header_image(); ?>" class="wp-post-image" />
-    </div> <!-- #site-banner -->
-    <?php
-	} elseif ( has_post_thumbnail() ) { ?>
-	<div class="site-banner">	<!-- #site-banner -->
-		<img src="<?php	the_post_thumbnail_url(); ?>" class="wp-post-image" />
-	</div> <!-- #site-banner -->		    
 	<?php }
 	?>
+        <div id="image-credit" class="image-credit-link"><a href="/image-credits/">Image credits</a></div>
+	</div> <!-- #site-banner -->		   
 
 	<div id="content" class="site-content">
