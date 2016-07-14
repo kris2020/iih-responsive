@@ -1,3 +1,6 @@
+/* @override 
+	http://new.intellectualhistory.net/wordpress/wp-content/themes/iih/iih.css */
+
 /*
 This stylesheet provides custom styles and is to be used in addition to style.css. It will eventually be merged with style.css.
 */
@@ -5,7 +8,9 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Reset
 # Typography
+# Wrapper
 # Headings
 ## Styling
 ## Font sizes
@@ -16,11 +21,18 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 # Content - styling
 # Content - layout
 # Content - links
+# Events - layout
+# Events - styling
 # Widgets
-# The Events Calendar
 # Footer - layout
 # Footer - styling
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Reset
+--------------------------------------------------------------*/
+
+@import url(reset.css);
 
 /*--------------------------------------------------------------
 # Typography
@@ -28,13 +40,18 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Gentium+Book+Basic:400,400bold,400italic);
 
-.site-branding, .main-navigation, .entry-title, .entry-content, .secondary-navigation, .site-info, .widget, .menu-toggle {
-    font-family: 'Open Sans', Arial, sans-serif;
+body {
+    font-family: 'Open Sans', Arial, sans-serif!important;
 }
 
 .site-branding em, .entry-content p:first-child {
     font-family: 'Gentium Book Basic', Garamond, serif;
 }
+
+/*--------------------------------------------------------------
+# Wrapper
+--------------------------------------------------------------*/
+
 
 
 /*--------------------------------------------------------------
@@ -120,6 +137,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 .entry-title, .page-title, .sub-title {
     text-align: center;
     text-transform: uppercase;
+    font-weight: bold;
     color: hsl(0, 0%, 0%);        
 }
 
@@ -160,7 +178,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 }
 
 .menu-toggle:hover, .menu-toggle:active {
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.8), inset 0 15px 17px rgba(0, 0, 0, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
 
 .main-navigation {
@@ -196,8 +214,6 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 
 .main-navigation a:hover {
     background-color: hsl(344, 76%, 30%);
-	/*box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.8), inset 0 15px 17px rgba(0, 0, 0, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);    */
-    display: block;
     text-decoration: none;  
 }
 
@@ -243,7 +259,15 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
     text-align: center;
 }
 
-.site-navigation ul ul {
+.main-navigation .menu-item .sub-menu li {
+    display: none;
+}
+
+.main-navigation .menu-item:hover .sub-menu li {
+    display: block;
+}
+
+/*.site-navigation ul ul {
     float: left;
     position: absolute;
     top: 1.5em;
@@ -290,7 +314,7 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 .site-navigation .current-menu-item > a,
 .site-navigation .current_page_ancestor > a,
 .site-navigation .current-menu-ancestor > a {
-}
+}*/
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
@@ -391,10 +415,19 @@ This stylesheet provides custom styles and is to be used in addition to style.cs
 # Content - layout
 --------------------------------------------------------------*/
 
+@media screen and (min-width: 1250px) { /* 1200px break-point */
+
+    .site-content {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+}
+
 .entry-content {
     margin-top: 0em;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .entry-content p {
@@ -414,6 +447,55 @@ a:hover, a:active {
 	color: hsl(218, 28%, 52%);
 }
 
+
+/*--------------------------------------------------------------
+# Events - layout
+--------------------------------------------------------------*/
+
+/* Override default margins */
+.eo-event-title, .eo-event-header, .eo-event-date time, .eo-event-content, .eo-event-meta, .eo-event-meta p {
+    margin: 0!important;
+}
+
+.eo-event-meta {
+    margin-bottom: 2.5%;
+}
+
+
+/*--------------------------------------------------------------
+# Events - styling
+--------------------------------------------------------------*/
+
+.eo-event-title {
+    font-size: 1.1rem;
+    font-weight: bold;    
+}
+
+.eo-event-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.eo-event-date {
+    line-height: 1rem;
+    font-style: normal!important;
+}
+
+.eo-event-content p, .eo-event-content p:first-child {
+    font-family: inherit;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: inherit;    
+}
+
+.eo-event-meta p, .eo-event-meta p:first-child {
+    font-family: inherit;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+
 /*--------------------------------------------------------------
 # Widgets - layout
 --------------------------------------------------------------*/
@@ -423,6 +505,13 @@ a:hover, a:active {
     .widget {
         float: left;
         width: 33%;
+    }
+    
+    .widget-area {
+        margin-top: 0;
+        margin-bottom: 1.2%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
     
 }
@@ -437,7 +526,10 @@ a:hover, a:active {
     .widget-area {
         float: left;
         width: 35%;
-        margin-top: 0.5rem;
+        margin-top: 1.2%;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
     
     .widget {
@@ -447,8 +539,16 @@ a:hover, a:active {
     
 }
 
+.widget-area {
+    overflow: hidden;
+}
+
 .widget {
     padding: 0 1rem 1rem;
+}
+
+.widget-title {
+    padding: 0.33rem;
 }
 
 .widget ul {
@@ -464,6 +564,7 @@ a:hover, a:active {
 
 .widget-title {
     font-size: 1rem;
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
 }
@@ -507,6 +608,15 @@ a:hover, a:active {
     
 }
 
+@media screen and (min-width: 1000px) { /* 1000px break-point */
+
+    .footer-wrapper {
+        width: 900px;
+        margin: 1.25% auto;
+    }
+
+}
+
 .site-directory, .site-search, .site-info {
     padding: 1rem 3rem;
     text-align: center
@@ -544,6 +654,7 @@ a:hover, a:active {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 0.25rem;
 }
 
 #twitter-logo {

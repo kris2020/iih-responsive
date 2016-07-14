@@ -110,6 +110,10 @@ function iih_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'iih_widgets_init' );
+/**
+ * Allow shortcodes in text widgets.
+ */
+add_filter('widget_text', 'do_shortcode');
 
 /**
  * Enqueue scripts and styles.
