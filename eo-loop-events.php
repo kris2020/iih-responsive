@@ -18,14 +18,6 @@
  */
 ?>
 
-<p>The Institute of Intellectual History hosts an ever-widening series of lectures, seminars, and conferences, all of which are open to the public.</p>
-
-<p>Previous events are listed in our archive organised by year: 2016 | 2015 | 2014 | 2013</p>
-
-<p>Some events are recorded and published online for our podcast series, <a href="/lectures/">Lectures in Intellectual History</a>.</p>
-
-<h1 class="entry-title">Upcoming Events</h1>	
-
 <?php if ( have_posts() ) { ?>
 
 	<?php eo_get_template_part( 'eo-events-nav' ); //Events navigation ?>

@@ -461,6 +461,14 @@ a:hover, a:active {
     margin-bottom: 2.5%;
 }
 
+.eo-events-shortcode-event {
+    margin-bottom: 2.5%;
+}
+
+.eo-events-shortcode p {
+    margin-bottom: 0!important;
+}
+
 
 /*--------------------------------------------------------------
 # Events - styling
@@ -476,12 +484,17 @@ a:hover, a:active {
     color: inherit;
 }
 
+.eo-events-shortcode p:first-child a {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 .eo-event-date {
     line-height: 1rem;
     font-style: normal!important;
 }
 
-.eo-event-content p, .eo-event-content p:first-child {
+.eo-event-content p, .eo-event-content p:first-child, .eo-events-shortcode p:first-child {
     font-family: inherit;
     font-style: normal;
     font-size: 1rem;

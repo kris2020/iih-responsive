@@ -93,8 +93,17 @@
 		<?php } ?>
 
 		<?php do_action( 'eventorganiser_additional_event_meta' ) ?>
-
+		<!-- Show Event text as 'the_excerpt' or 'the_content' -->
+		<div class="eo-event-content" itemprop="description"><?php the_excerpt(); ?></div>
 	</div>
+	
+	<!-- Does the event have a venue? -->
+	<?php if ( eo_get_venue() && eo_venue_has_latlng( eo_get_venue() ) ) : ?>
+		<!-- Display map -->
+		<div class="eo-event-venue-map">
+			<?php echo eo_get_venue_map( eo_get_venue(), array( 'width' => '100%' ) ); ?>
+		</div>
+	<?php endif; ?>
 
 	<div style="clear:both"></div>
 	
