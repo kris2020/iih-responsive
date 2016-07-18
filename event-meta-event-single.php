@@ -43,6 +43,10 @@
 
 	<div class="eo-event-meta">
 
+        <?php if ( the_meta() ) { ?>
+        	<?php echo the_meta();?>
+        <?php } ?>
+
 		<?php if ( ! eo_recurs() ) { ?>
 			<!-- Single event -->
 			<p><?php echo eo_format_event_occurrence();?></p>
@@ -54,7 +58,7 @@
 		<?php } ?>
 
 		<?php if ( get_the_terms( get_the_ID(), 'event-category' ) ) { ?>
-			<p><strong><?php esc_html_e( 'Categories', 'eventorganiser' ); ?>:</strong> <?php echo get_the_term_list( get_the_ID(),'event-category', '', ', ', '' ); ?></p>
+			<p><strong><?php esc_html_e( 'Type', 'eventorganiser' ); ?>:</strong> <?php echo get_the_term_list( get_the_ID(),'event-category', '', ', ', '' ); ?></p>
 		<?php } ?>
 
 		<?php if ( get_the_terms( get_the_ID(), 'event-tag' ) && ! is_wp_error( get_the_terms( get_the_ID(), 'event-tag' ) ) ) { ?>

@@ -16,17 +16,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
-function toggle() {
-    var check = document.getElementById('js-menu-toggle-collapse').style;
-    if (argument = 'collapse') {
-        document.getElementById('js-menu-toggle-collapse').style.display = 'none';
-        document.getElementById('js-menu-toggle-expand').style.display = 'block';        
-    } else if (argument = 'expand') {
-        document.getElementById('js-menu-toggle-collapse').style.display = 'block';
-        document.getElementById('js-menu-toggle-expand').style.display = 'none';        
-    }
-}
+$(document).ready(function() {   
+    $('.menu-toggle').click(function(){
+        $('.menu-navigation-container').toggle(500);
+        $('.menu-closed').toggle();    
+        $('.menu-open').toggle();
+    });
+    
+    // use jquery to detect resizing of window, and force navigation to show after 580px break point
+    $(window).resize(function() {
+       var width = $(window).width();
+       if (width > 580) {
+          $('.menu-navigation-container').show();
+       }
+    });
+});
 </script>
 <?php wp_head(); ?>
 </head>
@@ -41,8 +47,8 @@ function toggle() {
 			  <p class="site-description">University <em>of</em> St Andrews</p>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="site-navigation  main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" onclick="toggle();"><span class="menu-toggle-expand  js-menu-toggle-expand">&#9662; </span><span class="menu-toggle-collapse  js-menu-toggle-collapse">&#9666; </span><?php esc_html_e( 'Navigation', 'iih' ); ?></button>
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="menu-open">&#9662; </span><span class="menu-closed">&#9656; </span><?php esc_html_e( 'Navigation', 'iih' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

@@ -50,6 +50,10 @@ $classes = $eo_event_loop_args['class'];
     				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> 
     			</p>
     			
+                <?php if ( the_meta() ) { ?>
+                	<?php echo the_meta();?>
+                <?php } ?>
+    			
     			<p><?php echo eo_format_event_occurrence();?></p>
     			
     			<?php if ( eo_get_venue() ) {
@@ -58,7 +62,7 @@ $classes = $eo_event_loop_args['class'];
     			<?php } ?>
     			
     			<?php if ( get_the_terms( get_the_ID(), 'event-category' ) ) { ?>
-    				<p><strong><?php esc_html_e( 'Categories', 'eventorganiser' ); ?>:</strong> <?php echo get_the_term_list( get_the_ID(),'event-category', '', ', ', '' ); ?></p>
+    				<p><strong><?php esc_html_e( 'Type', 'eventorganiser' ); ?>:</strong> <?php echo get_the_term_list( get_the_ID(),'event-category', '', ', ', '' ); ?></p>
     			<?php } ?>              
     			      			
     			<?php if ( the_excerpt() ) { ?>
