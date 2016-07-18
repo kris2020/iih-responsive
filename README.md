@@ -1,7 +1,9 @@
 # responsive-iih
-New responsive CSS for IIH website, using an underscores.me theme.
+New responsive website for Insitute of Intellectual History
 
-## To do
-* Style Events Calendar
-* Merge style.css and iih.css
-* Fix padding between widgets and footer
+## Built with
+* Wordpress
+* Underscores.me
+* Events Organiser
+* jQuery
+* CSS
