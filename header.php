@@ -25,7 +25,7 @@ $(document).ready(function() {
         $('.menu-open').toggle();
     });
     
-    // use jquery to detect resizing of window, and force navigation to show after 580px break point
+    // jQuery responsive fall-back. detect resizing of window, and force navigation to show after 580px break point in case menu has previously been hidden in the DOM
     $(window).resize(function() {
        var width = $(window).width();
        if (width > 580) {
