@@ -273,7 +273,6 @@ body {
     
     .main-navigation ul li {
         float: left;
-        display: inline-block;
     }
     
     .main-navigation ul li ul {
@@ -286,6 +285,11 @@ body {
         display: block;
         z-index: 1;
     }
+    
+    .main-navigation ul li ul li {
+        text-align: left;
+        float: none;
+    }    
     
 }
 

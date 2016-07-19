@@ -31,6 +31,9 @@ $(document).ready(function() {
        if (width > 580) {
           $('.menu-navigation-container').show();
        }
+       else if (width < 580) {
+          $('.menu-navigation-container').hide();
+       }       
     });
 });
 </script>
