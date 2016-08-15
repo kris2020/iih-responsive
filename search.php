@@ -20,6 +20,12 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php
+			the_posts_pagination( array(
+			    'mid_size' => 2,
+			    'prev_text' => __( '&#171; Previous', 'textdomain' ),
+			    'next_text' => __( 'Next &#187;', 'textdomain' ),
+			) );
+			
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
 
@@ -32,7 +38,11 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
+			the_posts_pagination( array(
+			    'mid_size' => 2,
+			    'prev_text' => __( '&#171; Previous', 'textdomain' ),
+			    'next_text' => __( 'Next &#187;', 'textdomain' ),
+			) );
 
 		else :
 
