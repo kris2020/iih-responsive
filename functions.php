@@ -110,10 +110,8 @@ function iih_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'iih_widgets_init' );
-/**
- * Allow shortcodes in text widgets.
- */
-add_filter('widget_text', 'do_shortcode');
+add_filter( 'widget_text', 'shortcode_unautop');
+add_filter( 'widget_text', 'do_shortcode');
 
 /**
  * Enqueue scripts and styles.
@@ -157,3 +155,9 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load IIH custom widgets file and register the widgets
+ */
+require_once get_template_directory() . '/inc/widgets.php';
+register_widget('WP_Widget_IIH_Latest_News');

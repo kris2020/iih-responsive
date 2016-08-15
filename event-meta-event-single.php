@@ -97,8 +97,6 @@
 		<?php } ?>
 
 		<?php do_action( 'eventorganiser_additional_event_meta' ) ?>
-		<!-- Show Event text as 'the_excerpt' or 'the_content' -->
-		<div class="eo-event-content" itemprop="description"><?php the_excerpt(); ?></div>
 	</div>
 	
 	<!-- Does the event have a venue? -->

@@ -18,14 +18,16 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
-$(document).ready(function() {   
+$(document).ready(function() {
+    // Toggle the menu for mobile devices 
     $('.menu-toggle').click(function(){
         $('.menu-navigation-container').toggle(500);
         $('.menu-closed').toggle();    
         $('.menu-open').toggle();
     });
     
-    // jQuery responsive fall-back. detect resizing of window, and force navigation to show after 580px break point in case menu has previously been hidden in the DOM
+    /* Detect resizing of window, and force navigation to show after 
+    580px break point in case menu has previously been hidden in the DOM */
     $(window).resize(function() {
        var width = $(window).width();
        if (width > 580) {
@@ -35,6 +37,16 @@ $(document).ready(function() {
           $('.menu-navigation-container').hide();
        }       
     });
+    
+    /* If jQuery loads, collapse the navigation menu (this is a
+    fallback in case Javascript disabled) */
+    var width = $(window).width();
+    if (width < 580) {
+        $('.menu-navigation-container').hide();
+    }
+    
+    // Fade in effect for the page banner
+    $('.wp-post-image').hide().delay(700).fadeIn();
 });
 </script>
 <?php wp_head(); ?>
@@ -59,10 +71,10 @@ $(document).ready(function() {
 	<div id="site-banner">	<!-- #site-banner -->
 	<?php
 	if ( has_post_thumbnail() ) { ?>
-		<img src="<?php	the_post_thumbnail_url(); ?>" class="wp-post-image" /> 
+		<img src="<?php	the_post_thumbnail_url(); ?>" class="banner-image wp-post-image" /> 
 	<?php
 	} else { ?>
-	    <img src="<?php header_image(); ?>" class="wp-post-image" />
+	    <img src="<?php header_image(); ?>" class="banner-image wp-post-image" />
 	<?php }
 	?>
         <div id="image-credit" class="image-credit-link"><a href="/image-credits/">Image credits</a></div>
