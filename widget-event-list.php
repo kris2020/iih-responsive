@@ -56,4 +56,4 @@ $classes = $eo_event_loop_args['class'];
 
 <?php endif; ?>
 
-    <span class="widget-show-all-link"><a href="/events/event">Show all events</a></span>
+    <span class="widget-show-all-link"><a href="/events/">Show all events</a></span>

@@ -33,14 +33,9 @@
 <?php } else { ?>
 
 	<!-- If there are no events -->
-	<article id="post-0" class="post no-results not-found">
-		<header class="entry-header">
-			<h1 class="entry-title"><?php _e( 'Nothing Found', 'eventorganiser' ); ?></h1>
-		</header><!-- .entry-header -->
-
-		<div class="entry-content">
-			<p><?php _e( 'Apologies, but no results were found for the requested archive. ', 'eventorganiser' ); ?></p>
-		</div><!-- .entry-content -->
-	</article><!-- #post-0 -->
+	
+			<p>It looks like no events were found for the requested archive. You can try searching the site using the box below.</p>			<p>If you believe this to be an error, please <a href="mailto:info@intellectualhistory.net">contact us</a>.</p>
+			
+			<?php get_search_form(); ?>	
 
 <?php };

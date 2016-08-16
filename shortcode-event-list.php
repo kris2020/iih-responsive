@@ -46,9 +46,7 @@ $classes = $eo_event_loop_args['class'];
 
 			<div class="eo-events-shortcode-event <?php echo esc_attr( implode( ' ',$eo_event_classes ) ); ?>" >
     			
-    			<p>
-    				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> 
-    			</p>
+    			<h2 class="page-subheading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2> 
     			
                 <?php if ( the_meta() ) { ?>
                 	<?php echo the_meta();?>

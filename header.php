@@ -46,7 +46,7 @@ $(document).ready(function() {
     }
     
     // Fade in effect for the page banner
-    $('.wp-post-image').hide().delay(700).fadeIn();
+    $('.banner-image').hide().delay(700).fadeIn();
 });
 </script>
 <?php wp_head(); ?>
