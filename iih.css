@@ -1,6 +1,26 @@
+/* @override 
+	http://new.intellectualhistory.net/wordpress/wp-content/themes/iih/iih.css */
+
 /*
-This stylesheet provides custom styles and is to be used
-in addition to style.css. It will eventually be merged with style.css.
+Theme Name: iih
+Theme URI: http://underscores.me/
+Author: Effingham Wilson
+Author URI: http://www.effinghamwilson.com
+Description: Custom theme for the Institute of Intellectual History, University of St Andrews
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: iih
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+iih is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
 /*--------------------------------------------------------------
@@ -10,6 +30,10 @@ in addition to style.css. It will eventually be merged with style.css.
 # Reset
 # Typography
 # Reset
+# Forms
+# Accessibility
+# Clearings
+# Alignments
 # Headings
 ## Styling
 ## Font sizes
@@ -26,6 +50,8 @@ in addition to style.css. It will eventually be merged with style.css.
 ## Layout
 ## Styling
 # Widgets
+# Captions
+# Galleries
 # Footer
 ## Layout
 ## Styling
@@ -69,6 +95,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -77,10 +105,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-audio,
-canvas,
-progress,
-video {
+audio, canvas, progress, video {
 	display: inline-block;
 	vertical-align: baseline;
 }
@@ -88,10 +113,6 @@ video {
 audio:not([controls]) {
 	display: none;
 	height: 0;
-}
-
-body {
-	line-height: 1;
 }
 
 ol, ul {
@@ -113,6 +134,99 @@ table {
 	border-spacing: 0;
 }
 
+img {
+	border: 0;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+button, input, optgroup, select, textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button, select {
+	text-transform: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input {
+	line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Typography
@@ -123,7 +237,7 @@ button,
 input,
 select,
 textarea {
-	font-size: 16px;
+    font-size: 16px;
     font-family: 'Open Sans', Arial, sans-serif;
    	line-height: 1.5;
 }
@@ -146,11 +260,12 @@ p {
 	margin-bottom: 1.5em;
 }
 
-dfn,
-cite,
-em,
-i {
+dfn, cite, em, i {
 	font-style: italic;
+}
+
+b, strong {
+	font-weight: bold;
 }
 
 blockquote {
@@ -173,29 +288,244 @@ pre {
 	padding: 1.6em;
 }
 
-code,
-kbd,
-tt,
-var {
+code, kbd, tt, var {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
 
-abbr,
-acronym {
+abbr, acronym {
 	border-bottom: 1px dotted #666;
 	cursor: help;
 }
 
-mark,
-ins {
+mark, ins {
 	background: #fff9c0;
 	text-decoration: none;
 }
 
 big {
 	font-size: 125%;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: #ccc #ccc #bbb;
+	border-radius: 3px;
+	background: #e6e6e6;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+	color: rgba(0, 0, 0, .8);
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	border-color: #ccc #bbb #aaa;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	border-color: #aaa #bbb #bbb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+select {
+	border: 1px solid #ccc;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"] {
+	padding: 3px;
+}
+
+textarea {
+	padding-left: 3px;
+	width: 100%;
+}
+
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+    display: none;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
 }
 
 
@@ -218,7 +548,7 @@ big {
 }
 
 .page-heading {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 @media screen and (min-width: 580px) {
@@ -231,10 +561,6 @@ big {
     .site-description {
         font-size: 1.125rem;
         letter-spacing: 0.025rem;
-    }
-    
-    .page-heading {
-        font-size: 1.25rem;
     }
     
 }
@@ -252,7 +578,7 @@ big {
     }
     
     .page-heading {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }    
 
 }
@@ -280,16 +606,16 @@ big {
     color: inherit;
 }
 
-.page-heading {
-    text-align: center;
-    text-transform: uppercase;
+.page-heading, .page-subheading {
     font-weight: bold;
     color: hsl(0, 0%, 0%);        
 }
 
-.page-subheading {
-    font-weight: bold;
+.page-heading {
+    text-align: center;
+    text-transform: uppercase;    
 }
+
 
 /*--------------------------------------------------------------
 ## Layout
@@ -361,12 +687,10 @@ big {
         overflow: hidden;
     }
     
-    .main-navigation a:link, .main-navigation a:visited  {
-        background-color: hsl(0, 100%, 0%);
-    }
-    
-    .main-navigation a:hover, .main-navigation a:active {
-        background-color: hsl(344, 76%, 30%);
+    .main-navigation ul li {
+        background-color: hsl(0, 0%, 0%);
+        text-transform: uppercase;
+        font-size: 0.8rem;
     }
     
 }
@@ -505,10 +829,6 @@ body {
 	background: hsl(0, 0%, 100%); 
 }
 
-.entry-content {
-    color: hsl(0, 0%, 0%);
-}
-
 /*p*/.standfirst {
     margin-bottom: 1.5rem;
     font-style: italic;
@@ -525,13 +845,13 @@ body {
 
 }
 
-.iih-content-panel {
+.content-panel {
     width: 100%;
     margin-bottom: 2.5%;
     padding: 1%;
 }
 
-.iih-content-panel:nth-child(odd) {
+.content-panel:nth-child(odd) {
     background-color: hsl(0, 0%, 95%);
 }
 
@@ -554,12 +874,12 @@ body {
     margin-bottom: 3%;
 }
 
-.entry-content p, .entry-content .columns {
+.entry-content p {
     margin-top: 0;
     margin-bottom: 2.5%;
 }
 
-.entry-content p:last-child, .entry-content .columns:last-child {
+.entry-content p:last-child {
     margin-bottom: 0;
 }
 
@@ -752,10 +1072,86 @@ a:hover, a:active {color: hsl(218, 28%, 52%);}
 
 
 /*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+
+/*--------------------------------------------------------------
 # Footer - layout
 --------------------------------------------------------------*/
 
-@media screen and (min-width: 740px) { /* this will need changing when Search button is styled */
+@media screen and (min-width: 740px) {
 
     .site-directory, .site-search, .site-info {
         width: 50%;
