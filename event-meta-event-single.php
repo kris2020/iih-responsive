@@ -41,7 +41,7 @@
 		<?php endif; ?>
 	<?php endif; ?>
 
-	<div class="eo-event-meta">
+	<div class="event-meta">
 
         <?php if ( the_meta() ) { ?>
         	<?php echo the_meta();?>
@@ -102,7 +102,7 @@
 	<!-- Does the event have a venue? -->
 	<?php if ( eo_get_venue() && eo_venue_has_latlng( eo_get_venue() ) ) : ?>
 		<!-- Display map -->
-		<div class="eo-event-venue-map">
+		<div class="event-venue-map">
 			<?php echo eo_get_venue_map( eo_get_venue(), array( 'width' => '100%' ) ); ?>
 		</div>
 	<?php endif; ?>

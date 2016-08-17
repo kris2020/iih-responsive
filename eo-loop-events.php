@@ -20,7 +20,7 @@
 
 <?php if ( have_posts() ) { ?>
 
-	<?php eo_get_template_part( 'eo-events-nav' ); //Events navigation ?>
+	<?php eo_get_template_part( 'eo-events-nav-top' ); //Events navigation ?>
 
 	<?php
 	while ( have_posts() ) : the_post();
@@ -28,7 +28,7 @@
 	endwhile;
 	?>
 
-	<?php eo_get_template_part( 'eo-events-nav' ); //Events navigation ?>
+	<?php eo_get_template_part( 'eo-events-nav-end' ); //Events navigation ?>
 
 <?php } else { ?>
 

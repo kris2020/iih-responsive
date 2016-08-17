@@ -24,7 +24,7 @@ get_header(); ?>
 	<!-- Page header, display category title-->
 	<header class="page-header">
 		<h1 class="page-heading">
-			<?php printf( __( 'Event Category: %s', 'eventorganiser' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?>
+			<?php printf( __( 'Event Type: %s', 'eventorganiser' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?>
 		</h1>
 
 		<!-- If the category has a description display it-->

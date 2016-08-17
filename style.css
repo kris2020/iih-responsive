@@ -1,5 +1,5 @@
 /* @override 
-	http://new.intellectualhistory.net/wordpress/wp-content/themes/iih/style.css?ver=4.5.3 */
+	http://new.intellectualhistory.net/wordpress/wp-content/themes/iih/style.css?ver=4.6 */
 
 /*
 Theme Name: iih
@@ -163,6 +163,10 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
+}
+
+button:focus, input:focus {
+    outline: 0;
 }
 
 input {
@@ -669,12 +673,12 @@ textarea {
     color: inherit;
 }
 
-.page-heading, .page-subheading {
+.page-heading, .page-subheading, .event-heading, .event-subheading {
     font-weight: bold;
     color: hsl(0, 0%, 0%);        
 }
 
-.page-heading {
+.page-heading, .event-heading {
     text-align: center;
     text-transform: uppercase;    
 }
@@ -834,8 +838,8 @@ textarea {
     padding-bottom: 3%;
 }
 
-.nav-events:nth-child(2) {
-
+.events-end {
+    padding-bottom: 0;
 }
 
 
@@ -922,6 +926,10 @@ body {
     background-color: hsl(0, 0%, 95%);
 }
 
+.rss-widget-icon {
+    display: none;
+}
+
 /*--------------------------------------------------------------
 # Content - layout
 --------------------------------------------------------------*/
@@ -976,64 +984,31 @@ a:hover, a:active {color: hsl(218, 28%, 52%);}
 # Events - layout
 --------------------------------------------------------------*/
 
-/* Override default margins */
-.eo-event-title, .eo-event-header, .post-meta, .eo-event-date time, .eo-event-content, .eo-event-meta, .eo-event-meta p {
-    margin: 0!important;
+.post-meta, .event-meta p {
+    margin: 0;
 }
 
 .event {
-    margin-top: 0!important;
-}
-
-.eo-events-shortcode p {
-    margin-bottom: 0!important;
-}
-
-
-.eventorganiser-event-meta, .eo-events-shortcode-event {
     margin-bottom: 2.5%;
 }
 
-.eo-event-meta {
-    padding-bottom: 2.5%
+.event-venue-map {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;    
 }
+
 
 /*--------------------------------------------------------------
 # Events - styling
 --------------------------------------------------------------*/
 
-.post-meta, .eo-event-meta {
-    list-style-type: none!important;
-    color: hsl(0, 0%, 0%);
-}
-
-.eo-events-shortcode p:first-child a {
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-.eo-event-date {
-    font-style: normal;
+.post-meta {
+    list-style-type: none;
 }
 
 .post-meta-key {
     font-weight: bold;
 }
-
-.eo-event-content p, .eo-event-content p:first-child, .eo-events-shortcode p:first-child {
-    font-family: inherit;
-    font-style: normal;
-    font-size: 1rem;
-    line-height: inherit;    
-}
-
-.eo-event-meta p, .eo-event-meta p:first-child {
-    font-family: inherit;
-    font-style: normal;
-    font-size: 1rem;
-    line-height: inherit;
-}
-
 
 /*--------------------------------------------------------------
 # Widgets - layout
@@ -1295,15 +1270,6 @@ a:hover, a:active {color: hsl(218, 28%, 52%);}
 
 #university-logo img {
        width: 350px;
-}
-
-
-/*--------------------------------------------------------------
-# Search
---------------------------------------------------------------*/
-
-.search-form .search-field {
-    outline: none;
 }
 
 

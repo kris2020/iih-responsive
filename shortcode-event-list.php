@@ -44,30 +44,36 @@ $classes = $eo_event_loop_args['class'];
 				$format = eo_get_event_datetime_format();
 			?>
 
-			<div class="eo-events-shortcode-event <?php echo esc_attr( implode( ' ',$eo_event_classes ) ); ?>" >
-    			
+			<article class="event type-event <?php echo esc_attr( implode( ' ',$eo_event_classes ) ); ?>" itemscope itemtype="http://data-vocabulary.org/Event">
+
+    			<header class="event-header">	
     			<h2 class="page-subheading"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2> 
-    			
-                <?php if ( the_meta() ) { ?>
-                	<?php echo the_meta();?>
-                <?php } ?>
-    			
-    			<p><?php echo eo_format_event_occurrence();?></p>
-    			
-    			<?php if ( eo_get_venue() ) {
-    				$tax = get_taxonomy( 'event-venue' ); ?>
-    				<p><strong><?php echo esc_html( $tax->labels->singular_name ) ?>:</strong> <a href="<?php eo_venue_link(); ?>"> <?php eo_venue_name(); ?></a></p>
-    			<?php } ?>
-    			
-    			<?php if ( get_the_terms( get_the_ID(), 'event-category' ) ) { ?>
-    				<p><strong><?php esc_html_e( 'Type', 'eventorganiser' ); ?>:</strong> <?php echo get_the_term_list( get_the_ID(),'event-category', '', ', ', '' ); ?></p>
-    			<?php } ?>              
-    			      			
-    			<?php if ( the_excerpt() ) { ?>
+    			<div class="event-date">
+    			<?php echo eo_format_event_occurrence();?></div>		
+    			</header><!-- .entry-header -->
+<div class="event-details">			
+		<?php
+		//If it has one, display the thumbnail
+		if ( has_post_thumbnail() ) {
+			the_post_thumbnail( 'thumbnail', array( 'class' => 'attachment-thumbnail eo-event-thumbnail' ) );
+		}
+
+		//If custom meta data available (speaker, series, etc.) show it.	
+		if ( the_meta() ) {
+		    echo the_meta();
+		}
+
+		//A list of event details: venue, categories, tags.
+		echo eo_get_event_meta_list();
+		?>
+			
+	</div><!-- .event-details -->
+
+    			<div class="event-content" itemprop="description">    			<?php if ( the_excerpt() ) { ?>
     				<p><?php the_excerpt(); ?></p>
-    			<?php } ?>
-    			
-            </div>
+        			<?php } ?>
+    			</div>
+            </article>
 		<?php endwhile; ?>
 
 	</div>

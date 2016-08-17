@@ -1,6 +1,6 @@
 <nav class="navigation pagination" role="navigation">
 	<h2 class="screen-reader-text">Posts navigation</h2>
-	<div class="nav-links nav-events">
+	<div class="nav-links events-top">
 <?php
 global $wp_query;
 if ( $wp_query->max_num_pages > 1 ) { 

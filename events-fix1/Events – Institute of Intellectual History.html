@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://new.intellectualhistory.net/wordpress/xmlrpc.php">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    // Toggle the menu for mobile devices 
+    $('.menu-toggle').click(function(){
+        $('.menu-navigation-container').toggle(500);
+        $('.menu-closed').toggle();    
+        $('.menu-open').toggle();
+    });
+    
+    /* Detect resizing of window, and force navigation to show after 
+    580px break point in case menu has previously been hidden in the DOM */
+    $(window).resize(function() {
+       var width = $(window).width();
+       if (width > 580) {
+          $('.menu-navigation-container').show();
+       }
+       else if (width < 580) {
+          $('.menu-navigation-container').hide();
+       }       
+    });
+    
+    /* If jQuery loads, collapse the navigation menu (this is a
+    fallback in case Javascript disabled) */
+    var width = $(window).width();
+    if (width < 580) {
+        $('.menu-navigation-container').hide();
+    }
+    
+    // Fade in effect for the page banner
+    $('.banner-image').hide().delay(700).fadeIn();
+});
+</script>
+<title>Events &#8211; Institute of Intellectual History</title>
+<link rel="alternate" type="application/rss+xml" title="Institute of Intellectual History &raquo; Feed" href="http://new.intellectualhistory.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Institute of Intellectual History &raquo; Comments Feed" href="http://new.intellectualhistory.net/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Institute of Intellectual History &raquo; Events Feed" href="http://new.intellectualhistory.net/events/archive/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/new.intellectualhistory.net\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='iih-style-css'  href='http://new.intellectualhistory.net/wordpress/wp-content/themes/iih/style.css?ver=4.5.3' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='http://new.intellectualhistory.net/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://new.intellectualhistory.net/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://new.intellectualhistory.net/wordpress/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.5.3" />
+<link rel='shortlink' href='http://new.intellectualhistory.net/?p=0' />
+</head>
+
+<body class="archive post-type-archive post-type-archive-event hfeed eo-tc-page">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+			<h1 class="site-title"><a href="http://new.intellectualhistory.net/" rel="home">Institute <em>of</em> Intellectual History</a></h1>
+			  <p class="site-description">University <em>of</em> St Andrews</p>
+		</div><!-- .site-branding -->
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="menu-open">&#9662; </span><span class="menu-closed">&#9656; </span>Navigation</button>
+			<div class="menu-navigation-container"><ul id="primary-menu" class="menu"><li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="http://new.intellectualhistory.net/">Home</a></li>
+<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="http://new.intellectualhistory.net/about/">About</a></li>
+<li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-87"><a href="http://new.intellectualhistory.net/events/">Events</a>
+<ul class="sub-menu">
+	<li id="menu-item-1347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1347"><a href="http://new.intellectualhistory.net/events-calendar/">Calendar</a></li>
+</ul>
+</li>
+<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="http://new.intellectualhistory.net/lectures/">Lectures</a></li>
+<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://www.st-andrews.ac.uk/history/postgrad/taughtpostgrad/intellectualhistory.html">Graduate Programme</a></li>
+<li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-16"><a href="http://new.intellectualhistory.net/projects/">Research Projects</a>
+<ul class="sub-menu">
+	<li id="menu-item-127" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127"><a href="http://arts.st-andrews.ac.uk/intellectualhistory">Intellectual History Archive</a></li>
+	<li id="menu-item-1272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1272"><a href="http://new.intellectualhistory.net/what-is-intellectual-history/">What is Intellectual History?</a></li>
+	<li id="menu-item-128" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-128"><a href="http://www.tandfonline.com/loi/rgih20">Global Intellectual History</a></li>
+	<li id="menu-item-129" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-129"><a href="http://www.tandfonline.com/loi/rhei20">History of European Ideas</a></li>
+</ul>
+</li>
+</ul></div>		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+			
+	<div id="site-banner">	<!-- #site-banner -->
+		    <img src="http://new.intellectualhistory.net/wordpress/wp-content/uploads/2016/06/leviathan.jpg" class="banner-image wp-post-image" />
+	        <div id="image-credit" class="image-credit-link"><a href="/image-credits/">Image credits</a></div>
+	</div> <!-- #site-banner -->		   
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+<article id="post--9999" class="post--9999 event type-event status-publish hentry eo-tc-page">
+	<header class="entry-header">
+		<h1 class="page-heading">Events:  2016</h1>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+
+	<nav class="navigation pagination" role="navigation">
+	<h2 class="screen-reader-text">Posts navigation</h2>
+	<div class="nav-links nav-events">
+ <a href="http://new.intellectualhistory.net/events/archive/year/2016/page/2/" >Next &#187;</a>    </div>
+</nav>
+	<article id="post-149" class="post-149 event type-event status-publish hentry event-venue-new-seminar-room event-category-seminar eo-tc-event" itemscope itemtype="http://data-vocabulary.org/Event">
+	<header class="eo-event-header">
+		<h2 class="page-subheading">
+			<a href="http://new.intellectualhistory.net/events/the-alexander-romance-and-the-birth-of-the-ottoman-empire/" itemprop="url">
+				<span itemprop="summary">The Alexander Romance and the Birth of the Ottoman Empire</span>
+			</a>
+		</h2>
+		<div class="eo-event-date"> 
+			<time itemprop="startDate" datetime="2016-01-26T17:15:00+00:00">26th January 2016 5:15pm</time> &ndash; <time itemprop="endDate" datetime="2016-01-26T18:30:00+00:00">6:30pm</time>		</div>	
+	</header><!-- .entry-header -->	
+	<div class="eo-event-details event-entry-meta">			
+		<ul class="eo-event-meta"><li><strong>Venue:</strong> <a href="http://new.intellectualhistory.net/events/venues/new-seminar-room/">
+				<span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
+					<span itemprop="name">New Seminar Room</span>
+					<span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+						<meta itemprop="latitude" content="56.339523" />
+						<meta itemprop="longitude" content="-2.793150" />
+					</span>
+				</span>
+			</a></li><li><strong>Categories:</strong> <a href="http://new.intellectualhistory.net/events/category/seminar/" rel="tag">Seminar</a></li>
+</ul>			
+	</div><!-- .event-entry-meta -->
+	<!-- Show Event text as 'the_excerpt' or 'the_content' -->
+	<div class="eo-event-content" itemprop="description"></div>
+	
+</article>
+<article id="post-150" class="post-150 event type-event status-publish hentry event-venue-new-seminar-room event-category-seminar eo-tc-event" itemscope itemtype="http://data-vocabulary.org/Event">
+	<header class="eo-event-header">
+		<h2 class="page-subheading">
+			<a href="http://new.intellectualhistory.net/events/liberty-before-neo-roman-republicanism-hallers-restoration-of-political-science/" itemprop="url">
+				<span itemprop="summary">Liberty before neo-Roman republicanism: Haller&#8217;s restoration of political science</span>
+			</a>
+		</h2>
+		<div class="eo-event-date"> 
+			<time itemprop="startDate" datetime="2016-02-02T17:15:00+00:00">2nd February 2016 5:15pm</time> &ndash; <time itemprop="endDate" datetime="2016-02-02T18:30:00+00:00">6:30pm</time>		</div>	
+	</header><!-- .entry-header -->	
+	<div class="eo-event-details event-entry-meta">			
+		<ul class="eo-event-meta"><li><strong>Venue:</strong> <a href="http://new.intellectualhistory.net/events/venues/new-seminar-room/">
+				<span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
+					<span itemprop="name">New Seminar Room</span>
+					<span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+						<meta itemprop="latitude" content="56.339523" />
+						<meta itemprop="longitude" content="-2.793150" />
+					</span>
+				</span>
+			</a></li><li><strong>Categories:</strong> <a href="http://new.intellectualhistory.net/events/category/seminar/" rel="tag">Seminar</a></li>
+</ul>			
+	</div><!-- .event-entry-meta -->
+	<!-- Show Event text as 'the_excerpt' or 'the_content' -->
+	<div class="eo-event-content" itemprop="description"></div>
+	
+</article>
+<article id="post-151" class="post-151 event type-event status-publish hentry event-venue-st-andrews-cathedral event-category-lecture eo-tc-event" itemscope itemtype="http://data-vocabulary.org/Event">
+	<header class="eo-event-header">
+		<h2 class="page-subheading">
+			<a href="http://new.intellectualhistory.net/events/adam-ferguson-and-st-andrews/" itemprop="url">
+				<span itemprop="summary">Adam Ferguson and St Andrews</span>
+			</a>
+		</h2>
+		<div class="eo-event-date"> 
+			<time itemprop="startDate" datetime="2016-02-22T12:00:00+00:00">22nd February 2016 12:00pm</time> &ndash; <time itemprop="endDate" datetime="2016-02-22T13:00:00+00:00">1:00pm</time>		</div>	
+	</header><!-- .entry-header -->	
+	<div class="eo-event-details event-entry-meta">			
+		<ul class="eo-event-meta"><li><strong>Venue:</strong> <a href="http://new.intellectualhistory.net/events/venues/st-andrews-cathedral/">
+				<span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
+					<span itemprop="name">St Andrews Cathedral</span>
+					<span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+						<meta itemprop="latitude" content="56.338929" />
+						<meta itemprop="longitude" content="-2.786892" />
+					</span>
+				</span>
+			</a></li><li><strong>Categories:</strong> <a href="http://new.intellectualhistory.net/events/category/lecture/" rel="tag">Lecture</a></li>
+</ul>			
+	</div><!-- .event-entry-meta -->
+	<!-- Show Event text as 'the_excerpt' or 'the_content' -->
+	<div class="eo-event-content" itemprop="description"><p>Special lecture in commemoration of the 200th anniversary of the death of Adam Ferguson.</p>
+</div>
+	
+</article>
+<article id="post-152" class="post-152 event type-event status-publish hentry event-venue-new-seminar-room event-category-seminar eo-tc-event" itemscope itemtype="http://data-vocabulary.org/Event">
+	<header class="eo-event-header">
+		<h2 class="page-subheading">
+			<a href="http://new.intellectualhistory.net/events/where-was-your-church-before-knox-rewriting-the-past-in-reformation-scotland/" itemprop="url">
+				<span itemprop="summary">Where was your church before Knox? Rewriting the past in Reformation Scotland</span>
+			</a>
+		</h2>
+		<div class="eo-event-date"> 
+			<time itemprop="startDate" datetime="2016-02-23T17:15:00+00:00">23rd February 2016 5:15pm</time> &ndash; <time itemprop="endDate" datetime="2016-02-23T18:30:00+00:00">6:30pm</time>		</div>	
+	</header><!-- .entry-header -->	
+	<div class="eo-event-details event-entry-meta">			
+		<ul class="eo-event-meta"><li><strong>Venue:</strong> <a href="http://new.intellectualhistory.net/events/venues/new-seminar-room/">
+				<span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
+					<span itemprop="name">New Seminar Room</span>
+					<span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+						<meta itemprop="latitude" content="56.339523" />
+						<meta itemprop="longitude" content="-2.793150" />
+					</span>
+				</span>
+			</a></li><li><strong>Categories:</strong> <a href="http://new.intellectualhistory.net/events/category/seminar/" rel="tag">Seminar</a></li>
+</ul>			
+	</div><!-- .event-entry-meta -->
+	<!-- Show Event text as 'the_excerpt' or 'the_content' -->
+	<div class="eo-event-content" itemprop="description"><p>Jointly convened with the Reformation Studies Institute.</p>
+</div>
+	
+</article>
+<article id="post-153" class="post-153 event type-event status-publish hentry event-venue-new-seminar-room event-category-seminar eo-tc-event" itemscope itemtype="http://data-vocabulary.org/Event">
+	<header class="eo-event-header">
+		<h2 class="page-subheading">
+			<a href="http://new.intellectualhistory.net/events/the-contribution-of-the-history-of-exegesis-to-the-history-of-ideas/" itemprop="url">
+				<span itemprop="summary">The contribution of the history of exegesis to the history of ideas</span>
+			</a>
+		</h2>
+		<div class="eo-event-date"> 
+			<time itemprop="startDate" datetime="2016-03-08T17:15:00+00:00">8th March 2016 5:15pm</time> &ndash; <time itemprop="endDate" datetime="2016-03-08T18:30:00+00:00">6:30pm</time>		</div>	
+	</header><!-- .entry-header -->	
+	<div class="eo-event-details event-entry-meta">			
+		<ul class="eo-event-meta"><li><strong>Venue:</strong> <a href="http://new.intellectualhistory.net/events/venues/new-seminar-room/">
+				<span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
+					<span itemprop="name">New Seminar Room</span>
+					<span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+						<meta itemprop="latitude" content="56.339523" />
+						<meta itemprop="longitude" content="-2.793150" />
+					</span>
+				</span>
+			</a></li><li><strong>Categories:</strong> <a href="http://new.intellectualhistory.net/events/category/seminar/" rel="tag">Seminar</a></li>
+</ul>			
+	</div><!-- .event-entry-meta -->
+	<!-- Show Event text as 'the_excerpt' or 'the_content' -->
+	<div class="eo-event-content" itemprop="description"></div>
+	
+</article>
+<article id="post-154" class="post-154 event type-event status-publish hentry event-venue-new-seminar-room event-category-seminar eo-tc-event" itemscope itemtype="http://data-vocabulary.org/Event">
+	<header class="eo-event-header">
+		<h2 class="page-subheading">
+			<a href="http://new.intellectualhistory.net/events/the-rise-of-a-modern-historical-outlook-or-the-dawning-of-the-past/" itemprop="url">
+				<span itemprop="summary">The Rise of a Modern Historical Outlook, or the Dawning of the Past</span>
+			</a>
+		</h2>
+		<div class="eo-event-date"> 
+			<time itemprop="startDate" datetime="2016-03-29T17:15:00+01:00">29th March 2016 5:15pm</time> &ndash; <time itemprop="endDate" datetime="2016-03-29T18:30:00+01:00">6:30pm</time>		</div>	
+	</header><!-- .entry-header -->	
+	<div class="eo-event-details event-entry-meta">			
+		<ul class="eo-event-meta"><li><strong>Venue:</strong> <a href="http://new.intellectualhistory.net/events/venues/new-seminar-room/">
+				<span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
+					<span itemprop="name">New Seminar Room</span>
+					<span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+						<meta itemprop="latitude" content="56.339523" />
+						<meta itemprop="longitude" content="-2.793150" />
+					</span>
+				</span>
+			</a></li><li><strong>Categories:</strong> <a href="http://new.intellectualhistory.net/events/category/seminar/" rel="tag">Seminar</a></li>
+</ul>			
+	</div><!-- .event-entry-meta -->
+	<!-- Show Event text as 'the_excerpt' or 'the_content' -->
+	<div class="eo-event-content" itemprop="description"></div>
+	
+</article>
+<article id="post-155" class="post-155 event type-event status-publish hentry event-venue-new-seminar-room event-category-seminar eo-tc-event" itemscope itemtype="http://data-vocabulary.org/Event">
+	<header class="eo-event-header">
+		<h2 class="page-subheading">
+			<a href="http://new.intellectualhistory.net/events/the-enlightenment-narrative-in-the-age-of-liberal-reform/" itemprop="url">
+				<span itemprop="summary">The Enlightenment Narrative in the Age of Liberal Reform</span>
+			</a>
+		</h2>
+		<div class="eo-event-date"> 
+			<time itemprop="startDate" datetime="2016-04-05T17:15:00+01:00">5th April 2016 5:15pm</time> &ndash; <time itemprop="endDate" datetime="2016-04-05T18:30:00+01:00">6:30pm</time>		</div>	
+	</header><!-- .entry-header -->	
+	<div class="eo-event-details event-entry-meta">			
+		<ul class="eo-event-meta"><li><strong>Venue:</strong> <a href="http://new.intellectualhistory.net/events/venues/new-seminar-room/">
+				<span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
+					<span itemprop="name">New Seminar Room</span>
+					<span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+						<meta itemprop="latitude" content="56.339523" />
+						<meta itemprop="longitude" content="-2.793150" />
+					</span>
+				</span>
+			</a></li><li><strong>Categories:</strong> <a href="http://new.intellectualhistory.net/events/category/seminar/" rel="tag">Seminar</a></li>
+</ul>			
+	</div><!-- .event-entry-meta -->
+	<!-- Show Event text as 'the_excerpt' or 'the_content' -->
+	<div class="eo-event-content" itemprop="description"></div>
+	
+</article>
+<article id="post-156" class="post-156 event type-event status-publish hentry event-venue-new-seminar-room event-category-seminar eo-tc-event" itemscope itemtype="http://data-vocabulary.org/Event">
+	<header class="eo-event-header">
+		<h2 class="page-subheading">
+			<a href="http://new.intellectualhistory.net/events/thomas-carlyle-and-the-french-revolution/" itemprop="url">
+				<span itemprop="summary">Thomas Carlyle and the French Revolution</span>
+			</a>
+		</h2>
+		<div class="eo-event-date"> 
+			<time itemprop="startDate" datetime="2016-04-12T17:15:00+01:00">12th April 2016 5:15pm</time> &ndash; <time itemprop="endDate" datetime="2016-04-12T18:30:00+01:00">6:30pm</time>		</div>	
+	</header><!-- .entry-header -->	
+	<div class="eo-event-details event-entry-meta">			
+		<ul class="eo-event-meta"><li><strong>Venue:</strong> <a href="http://new.intellectualhistory.net/events/venues/new-seminar-room/">
+				<span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
+					<span itemprop="name">New Seminar Room</span>
+					<span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+						<meta itemprop="latitude" content="56.339523" />
+						<meta itemprop="longitude" content="-2.793150" />
+					</span>
+				</span>
+			</a></li><li><strong>Categories:</strong> <a href="http://new.intellectualhistory.net/events/category/seminar/" rel="tag">Seminar</a></li>
+</ul>			
+	</div><!-- .event-entry-meta -->
+	<!-- Show Event text as 'the_excerpt' or 'the_content' -->
+	<div class="eo-event-content" itemprop="description"></div>
+	
+</article>
+<article id="post-157" class="post-157 event type-event status-publish hentry event-venue-arts-building event-category-seminar eo-tc-event" itemscope itemtype="http://data-vocabulary.org/Event">
+	<header class="eo-event-header">
+		<h2 class="page-subheading">
+			<a href="http://new.intellectualhistory.net/events/why-was-there-a-cambridge-school-in-the-history-of-political-thought/" itemprop="url">
+				<span itemprop="summary">Why was there a Cambridge School in the History of Political Thought?</span>
+			</a>
+		</h2>
+		<div class="eo-event-date"> 
+			<time itemprop="startDate" datetime="2016-04-14T18:00:00+01:00">14th April 2016 6:00pm</time> &ndash; <time itemprop="endDate" datetime="2016-04-14T19:00:00+01:00">7:00pm</time>		</div>	
+	</header><!-- .entry-header -->	
+	<div class="eo-event-details event-entry-meta">			
+		<ul class="eo-event-meta"><li><strong>Venue:</strong> <a href="http://new.intellectualhistory.net/events/venues/arts-building/">
+				<span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
+					<span itemprop="name">Seminar Room 1, Arts Building</span>
+					<span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+						<meta itemprop="latitude" content="56.342701" />
+						<meta itemprop="longitude" content="-2.796110" />
+					</span>
+				</span>
+			</a></li><li><strong>Categories:</strong> <a href="http://new.intellectualhistory.net/events/category/seminar/" rel="tag">Seminar</a></li>
+</ul>			
+	</div><!-- .event-entry-meta -->
+	<!-- Show Event text as 'the_excerpt' or 'the_content' -->
+	<div class="eo-event-content" itemprop="description"><p>Jointly held with the University of St Andrews History Society.</p>
+</div>
+	
+</article>
+<article id="post-158" class="post-158 event type-event status-publish hentry event-venue-school-ii event-category-lecture eo-tc-event" itemscope itemtype="http://data-vocabulary.org/Event">
+	<header class="eo-event-header">
+		<h2 class="page-subheading">
+			<a href="http://new.intellectualhistory.net/events/a-genealogy-of-liberty/" itemprop="url">
+				<span itemprop="summary">A Genealogy of Liberty</span>
+			</a>
+		</h2>
+		<div class="eo-event-date"> 
+			<time itemprop="startDate" datetime="2016-05-04T17:15:00+01:00">4th May 2016 5:15pm</time> &ndash; <time itemprop="endDate" datetime="2016-05-04T18:30:00+01:00">6:30pm</time>		</div>	
+	</header><!-- .entry-header -->	
+	<div class="eo-event-details event-entry-meta">			
+		<ul class="eo-event-meta"><li><strong>Venue:</strong> <a href="http://new.intellectualhistory.net/events/venues/school-ii/">
+				<span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
+					<span itemprop="name">School II</span>
+					<span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+						<meta itemprop="latitude" content="56.341721" />
+						<meta itemprop="longitude" content="-2.794121" />
+					</span>
+				</span>
+			</a></li><li><strong>Categories:</strong> <a href="http://new.intellectualhistory.net/events/category/lecture/" rel="tag">Lecture</a></li>
+</ul>			
+	</div><!-- .event-entry-meta -->
+	<!-- Show Event text as 'the_excerpt' or 'the_content' -->
+	<div class="eo-event-content" itemprop="description"><p>Among contemporary political theorists in the West, the idea of individual liberty is generally defined in negative terms as absence of interference. This lecture argues that, if the concept is instead approached genealogically, this orthodoxy begins to appear in need of qualification and perhaps abandonment. I begin by noting that, because the concept of interference [&hellip;]</p>
+</div>
+	
+</article>
+
+	<nav class="navigation pagination" role="navigation">
+	<h2 class="screen-reader-text">Posts navigation</h2>
+	<div class="nav-links nav-events">
+ <a href="http://new.intellectualhistory.net/events/archive/year/2016/page/2/" >Next &#187;</a>    </div>
+</nav>
+	</div><!-- .entry-content -->
+
+</article><!-- #post-## -->
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+<aside id="secondary" class="widget-area" role="complementary">
+			<section id="iih-latest-news-2" class="widget iih-latest-news">		<h2 class="widget-title">Latest News</h2>		<ul>
+					<li>
+				<a href="http://new.intellectualhistory.net/colloquium-presbyterianism-and-scottish-literature/">Colloquium: Presbyterianism and Scottish Literature</a>
+							<span class="post-date">12th August 2016</span>
+						</li>
+					<li>
+				<a href="http://new.intellectualhistory.net/the-present-crisis-origins-and-outcomes/">Colloquium: The Present Crisis: Origins and Outcomes</a>
+							<span class="post-date">12th August 2016</span>
+						</li>
+					<li>
+				<a href="http://new.intellectualhistory.net/50th-recording-of-lectures-in-intellectual-history/">50th recording of Lectures in Intellectual History</a>
+							<span class="post-date">2nd June 2016</span>
+						</li>
+				</ul>
+		<span class="widget-show-all-link"><a href="/category/news">Show all news</a></span>
+		</section>		<section id="eo_event_list_widget-2" class="widget EO_Event_List_Widget"><h2 class="widget-title">Upcoming Events</h2>
+
+	<ul id="" class="eo-events eo-events-widget" > 
+		<li class="eo-no-events" > No Events </li>
+	</ul>
+
+
+    <span class="widget-show-all-link"><a href="/events/">Show all events</a></span>
+</section><section id="rss-2" class="widget widget_rss"><h2 class="widget-title">Recent Lectures</h2><ul><li><a class='rsswidget' href='http://traffic.libsyn.com/intellectualhistory/2016-10-eric-nelson.mp3'>Barons&#039; Wars, under other names: Magna Carta, Royalism, and the American Founding</a> <span class="rss-date">18th May 2016</span></li><li><a class='rsswidget' href='http://traffic.libsyn.com/intellectualhistory/2016-09-quentin-skinner.mp3'>A genealogy of liberty</a> <span class="rss-date">4th May 2016</span></li><li><a class='rsswidget' href='http://traffic.libsyn.com/intellectualhistory/2016-07-laszlo-kontler.mp3'>The Enlightenment Narrative in the Age of Liberal Reform: William Robertson in Hungary</a> <span class="rss-date">5th April 2016</span></li></ul><span class="widget-show-all-link"><a href="/lectures">Show all lectures</a></span></section></aside><!-- #secondary -->
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+	    <div class="footer-wrapper">
+            <div class="site-directory  secondary-navigation">
+                <h3 class="footer-heading">Site Directory</h3><tag></tag>
+            	<div class="menu-site-directory-container"><ul id="secondary-menu" class="menu"><li id="menu-item-1257" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1257"><a href="http://new.intellectualhistory.net/">Home</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="http://new.intellectualhistory.net/about/">About</a></li>
+<li id="menu-item-1220" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1220"><a href="http://new.intellectualhistory.net/category/news/">News Archive</a></li>
+<li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a href="http://new.intellectualhistory.net/events/">Events</a></li>
+<li id="menu-item-1348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1348"><a href="http://new.intellectualhistory.net/events-calendar/">Calendar</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="http://new.intellectualhistory.net/lectures/">Lectures in Intellectual History</a></li>
+<li id="menu-item-1219" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1219"><a href="http://www.st-andrews.ac.uk/history/postgrad/taughtpostgrad/intellectualhistory.html">Graduate Programme</a></li>
+<li id="menu-item-1217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1217"><a href="http://new.intellectualhistory.net/mailing-list/">Mailing List</a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="http://new.intellectualhistory.net/projects/">Research Projects</a></li>
+<li id="menu-item-1224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1224"><a href="http://new.intellectualhistory.net/enlightenment-political-writings/">Enlightenment Political Writings</a></li>
+<li id="menu-item-1239" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239"><a href="http://new.intellectualhistory.net/what-is-intellectual-history/">What is Intellectual History?</a></li>
+<li id="menu-item-1227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1227"><a href="http://new.intellectualhistory.net/istvan-hont-book-prize/">István Hont Book Prize</a></li>
+<li id="menu-item-1236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1236"><a href="http://new.intellectualhistory.net/istvan-hont-lectures/">István Hont Memorial Lectures</a></li>
+</ul></div>            </div><!-- .site-directory -->
+            <div class="site-search">
+            <h3 class="footer-heading">Search</h3>
+            <form role="search" method="get" class="search-form" action="http://new.intellectualhistory.net">
+            	<label>
+            		<span class="screen-reader-text">Search for:</span>
+            		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+            	</label>
+            	<input type="submit" class="search-submit" value="Search" />
+            </form>
+            </div><!-- .site-search -->        
+            <div class="site-info">
+    			<h3 class="footer-heading">Contact Us</h3>
+    			<p>Institute of Intellectual History<br/>
+    			University of St Andrews<br/>
+    			St Katharine&rsquo;s Lodge<br/>
+    			The Scores<br/>
+    			St Andrews<br/>
+    			Fife<br/>
+    			KY16 9BA</p>
+    			<p><a href="mailto:info@intellectualhistory.net">info@intellectualhistory.net</a></p>
+    			<p>Sign up to our <a href="mailing-list/">mailing list</a> to be informed first of our latest news and forthcoming events.</p>
+    		</div><!-- .site-info -->		
+            <div id="twitter-logo" class="footer-logo">
+            	<a href="http://www.twitter.com/StAndrewsIIH"><img src="/assets/images/twitter-logo-white.png"/ id="twitter" alt="Follow us on Twitter @StAndrewsIIH"></a>
+            </div>		
+    	</div><!-- #footer-wrapper -->            
+    	<div id="university-logo" class="footer-logo">
+	    	<div class="footer-wrapper">
+    		    <a href="http://www.st-andrews.ac.uk/"><img src="/assets/images/st-andrews-monochrome.png" id="logo" alt="University of St Andrews Logo"/></a>
+    		</div><!-- #footer-wrapper -->
+    	</div><!-- #footer-logo -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<link rel='stylesheet' id='eo_front-css'  href='http://new.intellectualhistory.net/wordpress/wp-content/plugins/event-organiser/css/eventorganiser-front-end.min.css?ver=3.1.3' type='text/css' media='all' />
+<script type='text/javascript' src='http://new.intellectualhistory.net/wordpress/wp-content/themes/iih/js/skip-link-focus-fix.js?ver=20151215'></script>
+<script type='text/javascript' src='http://new.intellectualhistory.net/wordpress/wp-includes/js/wp-embed.min.js?ver=4.5.3'></script>
+
+</body>
+</html>

@@ -29,7 +29,7 @@ function iih_posted_on() {
 		$time_string
 	);
 
-	echo '<span class="posted-on"><em>' . $posted_on . '</em></span>'; // WPCS: XSS OK.
+	echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
 
 }
 endif;

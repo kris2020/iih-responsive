@@ -42,9 +42,9 @@ get_header(); ?>
 		?>
 		</h1>
 	</header>
-
-	<?php eo_get_template_part( 'eo-loop-events' ); //Lists the events ?>
-
+    <div class="entry-content">
+    <?php eo_get_template_part( 'eo-loop-events' ); //Lists the events ?>
+    </div><!-- .event-content -->
 </div><!-- #primary -->
 
 <!-- Call template sidebar and footer -->

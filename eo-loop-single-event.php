@@ -17,32 +17,37 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://data-vocabulary.org/Event">
-	<header class="eo-event-header">
-		<h2 class="page-subheading">
+	<header class="event-header">
+		<h2 class="event-subheading">
 			<a href="<?php the_permalink(); ?>" itemprop="url">
 				<span itemprop="summary"><?php the_title() ?></span>
 			</a>
 		</h2>
-		<div class="eo-event-date"> 
+		<div class="event-date"> 
 			<?php
 				//Formats the start & end date of the event
 				echo eo_format_event_occurrence();
 			?>
 		</div>	
 	</header><!-- .entry-header -->	
-	<div class="eo-event-details event-entry-meta">			
+	<div class="event-details">			
 		<?php
 		//If it has one, display the thumbnail
 		if ( has_post_thumbnail() ) {
 			the_post_thumbnail( 'thumbnail', array( 'class' => 'attachment-thumbnail eo-event-thumbnail' ) );
 		}
 
+		//If custom meta data available (speaker, series, etc.) show it.	
+		if ( the_meta() ) {
+		    echo the_meta();
+		}
+
 		//A list of event details: venue, categories, tags.
 		echo eo_get_event_meta_list();
 		?>
 			
-	</div><!-- .event-entry-meta -->
+	</div><!-- .event-details -->
 	<!-- Show Event text as 'the_excerpt' or 'the_content' -->
-	<div class="eo-event-content" itemprop="description"><?php the_excerpt(); ?></div>
+	<div class="event-content" itemprop="description"><?php the_excerpt(); ?></div>
 	
 </article>
