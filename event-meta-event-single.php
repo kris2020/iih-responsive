@@ -54,7 +54,8 @@
 
 		<?php if ( eo_get_venue() ) {
 			$tax = get_taxonomy( 'event-venue' ); ?>
-			<p><strong><?php echo esc_html( $tax->labels->singular_name ) ?>:</strong> <a href="<?php eo_venue_link(); ?>"> <?php eo_venue_name(); ?></a></p>
+			<p><strong><?php echo esc_html( $tax->labels->singular_name ) ?>:</strong> <a href="<?php eo_venue_link(); ?>"> <?php eo_venue_name(); ?></a>, <?php $address_array = eo_get_venue_address($event->ID); ?>
+			<?php echo $address_array['address'].', '.$address_array['city'] . ' '.$address_array['postcode']; ?></p>
 		<?php } ?>
 
 		<?php if ( get_the_terms( get_the_ID(), 'event-category' ) ) { ?>

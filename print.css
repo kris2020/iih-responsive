@@ -1,22 +1,22 @@
 a:link, a:visited, a:active, a:hover {
     text-decoration: underline;
-    color: black;
+    color: hsl(0, 0%, 0%);
 }
 
 .site-branding {
-    background-color: none;
-    color: black;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
     text-align: center;
-}
-
-.widget-area {
-    display: none;
-}
-
-.site-footer {
-    display: none;
 }
 
 .main-navigation {
     display: none;
+}
+
+.widget-area {
+    display: none;    
+}
+
+.site-footer {
+    display: none;    
 }

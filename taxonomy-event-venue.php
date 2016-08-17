@@ -34,11 +34,10 @@ get_header(); ?>
 		if ( $venue_description = eo_get_venue_description( $venue_id ) ) {
 			echo '<div class="venue-archive-meta">'.$venue_description.'</div>';
 		}
-		?>
-
+		?>		
 	</header>
     <div class="entry-content">
-    <?php eo_get_template_part( 'eo-loop-events' ); //Lists the events ?>
+    <?php eo_get_template_part( 'eo-loop-events' ); //Lists the events ?>        
     </div><!-- .event-content -->
 </div><!-- #primary -->
 
