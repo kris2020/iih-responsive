@@ -1,0 +1,22 @@
+a:link, a:visited, a:active, a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.site-branding {
+    background-color: none;
+    color: black;
+    text-align: center;
+}
+
+.widget-area {
+    display: none;
+}
+
+.site-footer {
+    display: none;
+}
+
+.main-navigation {
+    display: none;
+}

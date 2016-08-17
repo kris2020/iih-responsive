@@ -13,10 +13,10 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer">
 	    <div class="footer-wrapper">
-            <div class="site-directory  secondary-navigation">
-                <h3 class="footer-heading">Site Directory</h3><tag></tag>
+            <div class="site-directory secondary-navigation">
+                <h3 class="footer-heading">Site Directory</h3>
             	<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu' ) ); ?>
             </div><!-- .site-directory -->
             <div class="site-search">
@@ -42,7 +42,7 @@
     			<p>Sign up to our <a href="mailing-list/">mailing list</a> to be informed first of our latest news and forthcoming events.</p>
     		</div><!-- .site-info -->		
             <div id="twitter-logo" class="footer-logo">
-            	<a href="http://www.twitter.com/StAndrewsIIH"><img src="/assets/images/twitter-logo-white.png"/ id="twitter" alt="Follow us on Twitter @StAndrewsIIH"></a>
+            	<a href="http://www.twitter.com/StAndrewsIIH"><img src="/assets/images/twitter-logo-white.png" id="twitter" alt="Follow us on Twitter @StAndrewsIIH"/></a>
             </div>		
     	</div><!-- #footer-wrapper -->            
     	<div id="university-logo" class="footer-logo">

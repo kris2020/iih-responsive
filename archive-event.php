@@ -21,7 +21,7 @@
 //Call the template header
 get_header(); ?>
 
-<div id="primary" role="main" class="content-area">
+<div id="primary" class="content-area">
 
 	<!-- Page header-->
 	<header class="page-header">

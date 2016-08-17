@@ -13,7 +13,7 @@ class WP_Widget_IIH_Latest_News extends WP_Widget {
 	public function __construct() {
 		$widget_ops = array(
 			'classname' => 'iih-latest-news',
-			'description' => __( 'Displays latest news.' ),
+			'description' => __( 'Displays latest IIH news.' ),
 			'customize_selective_refresh' => true,
 		);
 		parent::__construct( 'iih-latest-news', __( 'Latest News' ), $widget_ops );
@@ -129,4 +129,4 @@ class WP_Widget_IIH_Latest_News extends WP_Widget {
 <?php
 	}
 }
-?>
+
