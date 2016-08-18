@@ -879,10 +879,9 @@ body {
 }
 
 /*p*/.standfirst {
-    margin-bottom: 1.5rem;
     font-style: italic;
-    font-size: 1.5em;
-    line-height: 1.15em;
+    font-size: 1.25em;
+    line-height: 1.25em;
 }
 
 @media screen and (min-width: 580px) {
@@ -912,15 +911,6 @@ body {
 # Content - layout
 --------------------------------------------------------------*/
 
-@media screen and (min-width: 1250px) { /* 1250px break-point */
-
-    .site-content {
-        width: 1200px;
-        margin: 0 auto;
-    }
-
-}
-
 .entry-content, .entry-header {
     padding-left: 5%;
     padding-right: 5%;
@@ -930,13 +920,21 @@ body {
     margin-bottom: 3%;
 }
 
-.entry-content p {
+.entry-content p, .event {
     margin-top: 0;
-    margin-bottom: 2.5%;
+    margin-bottom: 5%;
 }
 
 .entry-content p:last-child {
     margin-bottom: 0;
+}
+
+@media screen and (min-width: 580px) {
+
+    .entry-content p, .event {
+        margin-bottom: 2%;
+    }
+    
 }
 
 .column-one, .column-two {
@@ -946,6 +944,15 @@ body {
 .column-two {
     column-count: 2;
     column-width: 300px;
+}
+
+@media screen and (min-width: 1250px) { /* 1250px break-point */
+
+    .site-content {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
 }
 
 
@@ -966,10 +973,6 @@ a:hover, a:active {color: hsl(218, 28%, 52%);}
     margin: 0;
 }
 
-.event {
-    margin-bottom: 2.5%;
-}
-
 .event-venue-map {
     margin-top: 2.5%;
     margin-bottom: 2.5%;    
@@ -987,6 +990,7 @@ a:hover, a:active {color: hsl(218, 28%, 52%);}
 .post-meta-key {
     font-weight: bold;
 }
+
 
 /*--------------------------------------------------------------
 # Widgets - layout

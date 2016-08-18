@@ -46,7 +46,7 @@ $(document).ready(function() {
     });
     
     /* If jQuery loads, collapse the navigation menu (this is a
-    fallback in case Javascript disabled) */
+    fallback: no Javascript = menu shows by default) */
     var width = $(window).width();
     if (width < 580) {
         $('.menu-navigation-container').hide();

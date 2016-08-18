@@ -48,6 +48,5 @@
 			
 	</div><!-- .event-details -->
 	<!-- Show Event text as 'the_excerpt' or 'the_content' -->
-	<div class="event-content" itemprop="description"><?php the_excerpt(); ?></div>
-	
+	<div class="event-content" itemprop="description"><?php the_excerpt(); ?></div>	
 </article>
