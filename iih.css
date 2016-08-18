@@ -916,23 +916,18 @@ body {
     padding-right: 5%;
 }
 
-.entry-content {
-    margin-bottom: 3%;
-}
-
-.entry-content p, .event {
-    margin-top: 0;
+.entry-content, .entry-content p, .event {
     margin-bottom: 5%;
 }
 
-.entry-content p:last-child {
+.entry-content p:last-child, .event:last-child {
     margin-bottom: 0;
 }
 
 @media screen and (min-width: 580px) {
 
-    .entry-content p, .event {
-        margin-bottom: 2%;
+    .entry-content, .entry-content p, .event {
+        margin-bottom: 2.5%;
     }
     
 }
