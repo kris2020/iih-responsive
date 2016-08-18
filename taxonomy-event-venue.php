@@ -19,7 +19,7 @@
 //Call the template header
 get_header(); ?>
 
-<div id="primary" role="main" class="content-area">
+<div id="primary" class="content-area">
 
 	<!-- Page header, display venue title-->
 	<header class="page-header">

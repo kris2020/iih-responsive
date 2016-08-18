@@ -30,7 +30,7 @@
             </form>
             </div><!-- .site-search -->        
             <div class="site-info">
-    			<h3 class="footer-heading">Contact Us</h3>
+    			<h3 class="footer-heading">Contact</h3>
     			<p>Institute of Intellectual History<br/>
     			University of St Andrews<br/>
     			St Katharine&rsquo;s Lodge<br/>
