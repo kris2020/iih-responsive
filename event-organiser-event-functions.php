@@ -1532,7 +1532,7 @@ function eo_get_event_meta_list( $event_id = 0 ) {
 	if ( get_the_terms( $event_id, 'event-category' ) ) {
 		$html .= sprintf(
 			'<p><strong>%s:</strong> %s</p>' . "\n",
-			__( 'Type', 'eventorganiser' ),
+			__( 'Categories', 'eventorganiser' ),
 			get_the_term_list( $event_id, 'event-category', '', ', ', '' )
 		);
 	}
