@@ -42,9 +42,6 @@ $(document).ready(function() {
        var width = $(window).width();
        if (width > 580) {
           $('.menu-navigation-container').show();
-       }
-       else if (width < 580) {
-          $('.menu-navigation-container').hide();
        }       
     });
     
@@ -53,10 +50,7 @@ $(document).ready(function() {
     var width = $(window).width();
     if (width < 580) {
         $('.menu-navigation-container').hide();
-    }
-    
-    // Fade in effect for the page banner
-    $('.banner-image').hide().delay(700).fadeIn();
+    }    
 });
 
 if (top.location!= self.location) {
