@@ -29,24 +29,26 @@
 				echo eo_format_event_occurrence();
 			?>
 		</div>	
-	</header><!-- .entry-header -->	
-	<div class="event-details">			
-		<?php
-		//If it has one, display the thumbnail
-		if ( has_post_thumbnail() ) {
-			the_post_thumbnail( 'thumbnail', array( 'class' => 'attachment-thumbnail eo-event-thumbnail' ) );
-		}
-
-		//If custom meta data available (speaker, series, etc.) show it.	
-		if ( the_meta() ) {
-		    echo the_meta();
-		}
-
-		//A list of event details: venue, categories, tags.
-		echo eo_get_event_meta_list();
-		?>
-			
-	</div><!-- .event-details -->
-	<!-- Show Event text as 'the_excerpt' or 'the_content' -->
-	<div class="event-content" itemprop="description"><?php the_excerpt(); ?></div>	
+	</header><!-- .event-header -->	
+    <div class="event-content" itemprop="description">
+    	<div class="event-details">			
+    		<?php
+    		//If it has one, display the thumbnail
+    		if ( has_post_thumbnail() ) {
+    			the_post_thumbnail( 'thumbnail', array( 'class' => 'attachment-thumbnail eo-event-thumbnail' ) );
+    		}
+    
+    		//If custom meta data available (speaker, series, etc.) show it.	
+    		if ( the_meta() ) {
+    		    echo the_meta();
+    		}
+    
+    		//A list of event details: venue, categories, tags.
+    		echo eo_get_event_meta_list();
+    		?>
+    			
+    	</div><!-- .event-details -->
+    	<!-- Show Event text as 'the_excerpt' or 'the_content' -->
+    	<?php the_excerpt(); ?>
+	</div><!-- .event-content -->
 </article>

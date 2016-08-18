@@ -811,13 +811,9 @@ textarea {
     
 }
 
-.nav-links {
+.pagination {
     text-align: center;
-    padding-bottom: 3%;
-}
-
-.events-end {
-    padding-bottom: 0;
+    margin-bottom: 2%;
 }
 
 
@@ -911,7 +907,7 @@ body {
 # Content - layout
 --------------------------------------------------------------*/
 
-.entry-content, .entry-header {
+.entry-content, .entry-header, .event-content, .event-header {
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -920,7 +916,7 @@ body {
     margin-bottom: 5%;
 }
 
-.entry-content p:last-child, .event:last-child {
+.entry-content p:last-child {
     margin-bottom: 0;
 }
 

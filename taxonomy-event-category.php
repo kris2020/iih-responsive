@@ -20,7 +20,7 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-
+<main id="main" class="site-main">
 	<!-- Page header, display category title-->
 	<header class="page-header">
 		<h1 class="page-heading">
@@ -35,9 +35,8 @@ get_header(); ?>
 		}
 		?>
 	</header>
-    <div class="entry-content">
 	<?php eo_get_template_part( 'eo-loop-events' ); //Lists the events ?>
-    </div><!-- .event-content -->
+</main><!-- #main -->    
 </div><!-- #primary -->
 
 <!-- Call template sidebar and footer -->
