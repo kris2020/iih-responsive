@@ -1,9 +1,11 @@
 # responsive-iih
-New responsive website for Insitute of Intellectual History
+New responsive WordPress theme for the Insitute of Intellectual History at the University of St Andrews
+
+View the development version at http://new.intellectualhistory.net
 
 ## Built with
-* Wordpress
+* WordPress
 * Underscores.me
-* Events Organiser
+* Events Organiser plugin
 * jQuery
-* CSS
+* CSS - 14kb minified :)
