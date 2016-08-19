@@ -13,7 +13,7 @@
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) {
-				the_title( '<h1 class="page-heading">', '</h1>' );
+				the_title( '<h2 class="page-heading">', '</h2>' );
 			} else {
 				the_title( '<h2 class="page-heading"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			}
@@ -36,7 +36,8 @@
     <div class="entry-meta">
     <?php foreach (get_the_category() as $c) {
         if ($c->cat_ID === 35) {
-            echo '<p><strong>Please note:</strong> This post has been published under the auspices the <a href="/intellectual-history-network/">Intellectual History Network</a>. The Institute of Intellectual History is not responsible for the contents of the link.</p>';
+        /* If the post is part of the Intellectual History Archive, add a disclaimer */
+            echo '<p><strong>Disclaimer:</strong> This post has been published under the auspices the <a href="/intellectual-history-network/">Intellectual History Network</a>. The Institute of Intellectual History is not responsible for the contents of the link.</p>';
         }
     } ?>
     	<?php iih_posted_on(); ?>

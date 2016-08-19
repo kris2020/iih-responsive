@@ -26,7 +26,20 @@
         </header><!-- .entry-header -->
        	<div class="entry-content">
         <div class="entry-summary">
-        	<?php the_excerpt(); ?>
+        	<?php
+        	$ihn = false;
+            foreach (get_the_category() as $c) {
+                if ($c->cat_ID === 35) {
+                    $ihn = true;
+                }
+            }
+            
+            if (!$ihn) {
+                the_excerpt();
+            } else {
+                echo '<a href="/intellectual-history-network/">Intellectual History Network</a>';
+            }
+        	?>
         </div><!-- .entry-summary -->
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
