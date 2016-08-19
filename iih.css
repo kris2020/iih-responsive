@@ -916,7 +916,7 @@ body {
     margin-bottom: 5%;
 }
 
-.entry-content p:last-child {
+.entry-content p:last-child, .event:last-child {
     margin-bottom: 0;
 }
 

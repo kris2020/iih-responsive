@@ -17,17 +17,14 @@
 <meta name="description" content="News and events from the Institute of Intellectual History at the University of St Andrews. Founded in 2013, the research centre boasts one of the largest concentrations of intellectual historians in the world."/>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-45574581-1', 'auto');
-  ga('send', 'pageview');
-</script>
+<?php wp_head(); ?>
+<link rel='stylesheet' id='iih-print-css'  href='/wordpress/wp-content/themes/iih/print.css' type='text/css' media='print' />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
+if (top.location!= self.location) {
+	top.location = self.location.href;
+}
+
 $(document).ready(function() {
     // Toggle the menu for mobile devices 
     $('.menu-toggle').click(function(){
@@ -39,10 +36,10 @@ $(document).ready(function() {
     /* Detect resizing of window, and force navigation to show after 
     580px break point in case menu has previously been hidden in the DOM */
     $(window).resize(function() {
-       var width = $(window).width();
-       if (width > 580) {
+        var width = $(window).width();
+        if (width > 580) {
           $('.menu-navigation-container').show();
-       }       
+        }
     });
     
     /* If jQuery loads, collapse the navigation menu (this is a
@@ -52,13 +49,7 @@ $(document).ready(function() {
         $('.menu-navigation-container').hide();
     }    
 });
-
-if (top.location!= self.location) {
-	top.location = self.location.href;
-}
 </script>
-<?php wp_head(); ?>
-<link rel='stylesheet' id='iih-print-css'  href='/wordpress/wp-content/themes/iih/print.css' type='text/css' media='print' />
 </head>
 
 <body <?php body_class(); ?>>

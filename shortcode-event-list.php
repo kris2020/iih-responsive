@@ -32,8 +32,6 @@ $classes = $eo_event_loop_args['class'];
 
 <?php if ( $eo_event_loop->have_posts() ) :  ?>
 
-	<div <?php echo $id; ?> class="<?php echo esc_attr( $classes );?>" > 
-
 		<?php while ( $eo_event_loop->have_posts() ) :  $eo_event_loop->the_post(); ?>
 
 			<?php
@@ -74,7 +72,6 @@ $classes = $eo_event_loop_args['class'];
 	</div><!-- .event-content -->
     </article>
 	<?php endwhile; ?>
-	</div>
 
 <?php elseif ( ! empty( $eo_event_loop_args['no_events'] ) ) :  ?>
 
