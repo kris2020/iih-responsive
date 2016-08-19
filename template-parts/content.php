@@ -34,9 +34,15 @@
 	    
 	    if ( 'post' === get_post_type() ) : ?>
     <div class="entry-meta">
+    <?php foreach (get_the_category() as $c) {
+        if ($c->cat_ID === 35) {
+            echo '<p><strong>Please note:</strong> This post has been published under the auspices the <a href="/intellectual-history-network/">Intellectual History Network</a>. The Institute of Intellectual History is not responsible for the contents of the link.</p>';
+        }
+    } ?>
     	<?php iih_posted_on(); ?>
     </div><!-- .entry-meta -->
     <?php
-    endif; ?>
+    endif;
+    ?>
    	</div><!-- .entry-content -->
 </article><!-- #post-## -->

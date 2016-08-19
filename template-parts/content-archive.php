@@ -13,7 +13,7 @@
     	<header class="entry-header">
     		<?php
     			if ( is_single() ) {
-    				the_title( '<h2 class="page-subheading">', '</h3>' );
+    				the_title( '<h2 class="page-subheading">', '</h2>' );
     			} else {
     				the_title( '<h2 class="page-subheading"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
     			}

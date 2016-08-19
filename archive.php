@@ -16,7 +16,9 @@ get_header(); ?>
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-heading">News Archive</h1>
+    			<h1 class="page-heading">
+			<?php echo single_cat_title( '', false ) . ' Archive'; ?>
+    			</h1>			
 			</header><!-- .page-header -->
 			
             <?php
