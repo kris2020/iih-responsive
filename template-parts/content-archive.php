@@ -37,7 +37,7 @@
             if (!$ihn) {
                 the_excerpt();
             } else {
-                echo '<a href="/intellectual-history-network/">Intellectual History Network</a>';
+                echo 'Posted in <a href="/intellectual-history-network/">Intellectual History Network</a>';
             }
         	?>
         </div><!-- .entry-summary -->

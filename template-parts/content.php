@@ -37,7 +37,7 @@
     <?php foreach (get_the_category() as $c) {
         if ($c->cat_ID === 35) {
         /* If the post is part of the Intellectual History Archive, add a disclaimer */
-            echo '<p><strong>Disclaimer:</strong> This post has been published under the auspices the <a href="/intellectual-history-network/">Intellectual History Network</a>. The Institute of Intellectual History is not responsible for the contents of the link.</p>';
+            echo '<p><strong>Disclaimer:</strong> This post has been published under the auspices the <a href="/intellectual-history-network/">Intellectual History Network</a>. The Institute of Intellectual History is not responsible for the contents of any external links.</p>';
         }
     } ?>
     	<?php iih_posted_on(); ?>
