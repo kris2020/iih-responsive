@@ -19,6 +19,7 @@ get_header(); ?>
 
 				<div class="entry-content">
 					<p>It looks like nothing was found at this location. You can try searching the site using the box below.</p>
+					<p>Alternatively, you may find what you are looking for at the <a href="http://arts.st-andrews.ac.uk/intellectualhistory">Intellectual History Archive</a>.</p>
 					<p>If you believe this to be an error, please <a href="mailto:info@intellectualhistory.net">contact us</a>.</p>
 					
 					<?php get_search_form(); ?>		

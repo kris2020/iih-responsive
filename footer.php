@@ -20,7 +20,6 @@
             	<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_id' => 'secondary-menu' ) ); ?>
             </div><!-- .site-directory -->
             <div class="site-search">
-            <h3 class="footer-heading">Search</h3>
             <form role="search" method="get" class="search-form" action="<?php echo home_url(); ?>">
             	<label>
             		<span class="screen-reader-text">Search for:</span>
@@ -39,7 +38,7 @@
     			Fife<br/>
     			KY16 9BA</p>
     			<p><a href="mailto:info@intellectualhistory.net">info@intellectualhistory.net</a></p>
-    			<p>Sign up to our <a href="mailing-list/">mailing list</a> to be informed first of our latest news and forthcoming events.</p>
+    			<p>Sign up to our <a href="/mailing-list/">mailing list</a> to be informed first of our latest news and forthcoming events.</p>
     		</div><!-- .site-info -->		
             <div id="twitter-logo" class="footer-logo">
             	<a href="http://www.twitter.com/StAndrewsIIH"><img src="/assets/images/twitter-logo-white.png" id="twitter" alt="Follow us on Twitter @StAndrewsIIH"/></a>

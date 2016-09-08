@@ -14,7 +14,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="News and events from the Institute of Intellectual History at the University of St Andrews. Founded in 2013, the research centre boasts one of the largest concentrations of intellectual historians in the world."/>
+<meta name="description" content="Founded in 2013, the Institute of Intellectual History at the University of St Andrews boasts one of the largest concentrations of intellectual historians in the world."/>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
