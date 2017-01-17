@@ -951,16 +951,20 @@ body {
 # Content - links
 --------------------------------------------------------------*/
 
-a:link, a:visited {color: hsl(205, 100%, 26%);}
+a:link, a:visited {
+    color: hsl(205, 100%, 26%);
+}
 
-a:hover, a:active {color: hsl(218, 28%, 52%);}
+a:hover, a:active {
+    color: hsl(218, 28%, 52%);
+}
 
 
 /*--------------------------------------------------------------
 # Events - layout
 --------------------------------------------------------------*/
 
-.post-meta, .event-meta p {
+.post-meta, .event-meta p, ul.eo-event-meta {
     margin: 0;
 }
 
@@ -974,7 +978,7 @@ a:hover, a:active {color: hsl(218, 28%, 52%);}
 # Events - styling
 --------------------------------------------------------------*/
 
-.post-meta {
+.post-meta, .eo-event-meta {
     list-style-type: none;
 }
 
